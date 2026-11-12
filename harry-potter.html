@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Сложный квиз по Гарри Поттеру — Искра Алфеи</title>
-<meta name="description" content="20 случайных вопросов из 100 по миру Гарри Поттера. Ответь, набери баллы и сравни результат с друзьями.">
+<meta name="description" content="Более 1000 вопросов по миру Гарри Поттера, 20 случайных за прохождение. Ответь, набери баллы и сравни результат с друзьями.">
 <meta name="theme-color" content="#192b3d">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -14,8 +14,9 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 <body>
 <header><div class="header-row"><a class="brand" href="./"><span>✦</span>искра алфеи</a><a class="home-link" href="./">← Все квизы</a></div></header>
 <main id="app"></main>
-<footer>Неофициальная фан-викторина. Факты сверены с Harry Potter Lexicon; ссылки на источники доступны после каждого ответа.</footer>
+<footer>Неофициальная фан-викторина. Вопросы по книгам, фильмам и волшебному бестиарию. Источник указан после каждого ответа.</footer>
 <script src="./harry-potter-questions.js"></script>
+<script src="./harry-potter-expanded.js"></script>
 <script>
 'use strict';
 const legacyQuestions=[
@@ -41,37 +42,81 @@ const legacyQuestions=[
   {tag:'История квиддича',icon:'🟡',points:4,q:'Кто изобрёл золотой снитч как замену охраняемой птице сниджет?',options:['Квентин Тримбл','Девлин Уайтхорн','Боуман Райт','Людо Бэгмен'],answer:2,why:'Золотой снитч создал Боуман Райт, мастер чар по металлу.',source:'https://www.hp-lexicon.org/character/bowman-wright/'}
 
 ].map((q,id)=>({id,...q}));
-const questionBank=[...legacyQuestions,...extraQuestions];
+const questionBank=[...legacyQuestions,...extraQuestions,...expandedQuestions];
 const questionById=new Map(questionBank.map(q=>[q.id,q]));
 const quizLength=20;
 const app=document.querySelector('#app');
-let questions=[],optionOrders=[],answers=[],step=0,noticeTimer,resultVersion=2;
+let questions=[],optionOrders=[],answers=[],step=0,noticeTimer,resultVersion=3;
+const seenStorageKey='alfea.hp.seen.v1';
+let seenQuestionIds=new Set();
+function readSeenQuestions(){
+  try{
+    const values=JSON.parse(localStorage.getItem(seenStorageKey)||'[]');
+    if(!Array.isArray(values))return seenQuestionIds;
+    return new Set(values.filter(id=>Number.isInteger(id)&&questionById.has(id)));
+  }catch(error){return seenQuestionIds;}
+}
+function rememberQuestion(id){
+  if(seenQuestionIds.has(id))return;
+  seenQuestionIds.add(id);
+  try{localStorage.setItem(seenStorageKey,JSON.stringify([...seenQuestionIds]));}catch(error){/* In-memory history still works when storage is unavailable. */}
+}
 function shuffle(items){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
-function chooseQuestions(){return shuffle(questionBank).slice(0,quizLength);}
+function chooseQuestions(){
+  seenQuestionIds=readSeenQuestions();
+  if(seenQuestionIds.size===questionBank.length)seenQuestionIds=new Set([...seenQuestionIds].slice(-quizLength));
+  const candidates=shuffle(questionBank),picked=[],topics=new Set(),counts={};
+  const limits={chapter:2,film:2,spell:3,creature:3,legacy:4};
+  function take(pool,limitKinds){
+    for(const q of pool){
+      if(picked.length===quizLength)return;
+      const kind=q.kind||'legacy',topic=q.topic||q.source;
+      if(topics.has(topic)||(limitKinds&&(counts[kind]||0)>=(limits[kind]||quizLength)))continue;
+      picked.push(q);topics.add(topic);counts[kind]=(counts[kind]||0)+1;
+    }
+  }
+  const fresh=candidates.filter(q=>!seenQuestionIds.has(q.id));
+  take(fresh,true);take(fresh,false);
+  take(candidates.filter(q=>seenQuestionIds.has(q.id)),true);
+  take(candidates,false);
+  return shuffle(picked);
+}
 function maxPoints(){return questions.reduce((total,q)=>total+q.points,0);}
 function renderHome(){
-  app.innerHTML=`<section class="hero"><div class="eyebrow">Квиз по миру Гарри Поттера</div><h1>Сможешь пройти<br>испытание для знатоков?</h1><p>Здесь помогут детали, которые легко пропустить даже после нескольких перечитываний. За правильный ответ получишь от 3 до 4 баллов. После каждого вопроса покажем короткий разбор.</p><div class="emblem" aria-hidden="true"><svg viewBox="0 0 640 210" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><circle cx="487" cy="55" r="36" fill="#e9d095"/><path d="M0 196h640v14H0zM143 198V96h45V72l21-25 20 25v126h35V87h43V61l17-23 17 23v137h32V86h47v112h30v-51h42v51" fill="#111f31"/><path d="M133 96h66l-33-29zm122-9h60l-30-30zm59-26h54l-27-34zm54 25h61l-31-30z" fill="#111f31"/><path d="M166 137v29m42-68v30m78-6v29m56-40v26m54-24v25m75 34v20" stroke="#d8ae69" stroke-width="8" stroke-linecap="round"/><path d="M46 80c78 15 127-8 192-44" fill="none" stroke="#e9d095" stroke-width="2" opacity=".7"/><g fill="#fff0b8"><circle cx="87" cy="51" r="2"/><circle cx="374" cy="24" r="2"/><circle cx="551" cy="112" r="2"/></g></svg></div><div class="stat-row"><span>100 вопросов в банке</span><span>20 случайных за попытку</span><span>Ответы с источниками</span></div><button class="primary" id="start">Начать испытание <span>→</span></button></section>`;
+  app.innerHTML=`<section class="hero"><div class="eyebrow">Квиз по миру Гарри Поттера</div><h1>Сможешь пройти<br>испытание для знатоков?</h1><p>Больше тысячи вопросов: семь книг, заклинания, существа и кино. В каждом испытании — новая подборка; в этом браузере сначала покажем ещё не встречавшиеся вопросы. За правильный ответ получишь от 3 до 4 баллов. После каждого вопроса покажем короткий разбор.</p><div class="emblem" aria-hidden="true"><svg viewBox="0 0 640 210" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><circle cx="487" cy="55" r="36" fill="#e9d095"/><path d="M0 196h640v14H0zM143 198V96h45V72l21-25 20 25v126h35V87h43V61l17-23 17 23v137h32V86h47v112h30v-51h42v51" fill="#111f31"/><path d="M133 96h66l-33-29zm122-9h60l-30-30zm59-26h54l-27-34zm54 25h61l-31-30z" fill="#111f31"/><path d="M166 137v29m42-68v30m78-6v29m56-40v26m54-24v25m75 34v20" stroke="#d8ae69" stroke-width="8" stroke-linecap="round"/><path d="M46 80c78 15 127-8 192-44" fill="none" stroke="#e9d095" stroke-width="2" opacity=".7"/><g fill="#fff0b8"><circle cx="87" cy="51" r="2"/><circle cx="374" cy="24" r="2"/><circle cx="551" cy="112" r="2"/></g></svg></div><div class="stat-row"><span>${questionBank.length.toLocaleString('ru-RU')} вопросов в банке</span><span>20 случайных за попытку</span><span>Ответы с источниками</span></div><button class="primary" id="start">Начать испытание <span>→</span></button></section>`;
   document.querySelector('#start').onclick=startQuiz;
 }
-function startQuiz(){questions=chooseQuestions();optionOrders=questions.map(()=>shuffle([0,1,2,3]));answers=[];step=0;resultVersion=2;history.replaceState(null,'',location.pathname);renderQuestion();}
+function startQuiz(){questions=chooseQuestions();optionOrders=questions.map(()=>shuffle([0,1,2,3]));answers=[];step=0;resultVersion=3;history.replaceState(null,'',location.pathname);renderQuestion();}
 function focusTitle(){const title=app.querySelector('h1,h2');title.tabIndex=-1;title.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
 function renderQuestion(){
   const q=questions[step],chosen=answers[step];
+  rememberQuestion(q.id);
   app.innerHTML=`<section class="quiz"><div class="topline"><span>Архив волшебного мира</span><span>Вопрос ${step+1} из ${questions.length}</span></div><div class="progress" role="progressbar" aria-label="Прогресс квиза" aria-valuemin="0" aria-valuemax="${questions.length}" aria-valuenow="${step}"><i style="width:${step/questions.length*100}%"></i></div><div class="qcard"><div class="qmeta"><span>${q.tag}</span><span>${q.points} балла за ответ</span></div><div class="icon" aria-hidden="true">${q.icon}</div><h2>${q.q}</h2><div class="options" role="group" aria-label="Варианты ответа">${optionOrders[step].map((i,visualIndex)=>`<button class="option ${chosen!==undefined?(i===q.answer?'correct':i===chosen?'wrong':''):''}" data-answer="${i}" ${chosen!==undefined?'disabled':''}><span class="num">${visualIndex+1}</span><span>${q.options[i]}</span></button>`).join('')}</div>${chosen!==undefined?`<div class="feedback" role="status"><strong>${chosen===q.answer?`Верно · +${q.points} балла`:'Не угадала · +0 баллов'}</strong><p>${q.why}</p><a href="${q.source}" target="_blank" rel="noopener noreferrer">Проверить факт ↗</a></div>`:''}<div class="navigation"><span>${chosen===undefined?'Выбери один ответ':'Ответ принят'}</span><button class="primary" id="next" ${chosen===undefined?'disabled':''}>${step===questions.length-1?'Узнать счёт':'Следующий вопрос'} <span>→</span></button></div></div></section>`;
   if(chosen===undefined)app.querySelectorAll('[data-answer]').forEach(button=>button.onclick=()=>{answers[step]=Number(button.dataset.answer);renderQuestion();});
   document.querySelector('#next').onclick=()=>{if(answers[step]===undefined)return;if(step<questions.length-1){step++;renderQuestion();}else showResult(answers,false);};
   focusTitle();
 }
-function resultHash(values){return resultVersion===1?'#score=1.'+values.join(''):'#score=2.'+questions.map((q,i)=>q.id.toString(36).padStart(2,'0')+values[i]).join('');}
+function resultHash(values){
+  if(resultVersion===1)return '#score=1.'+values.join('');
+  if(resultVersion===2)return '#score=2.'+questions.map((q,i)=>q.id.toString(36).padStart(2,'0')+values[i]).join('');
+  return '#score=3.'+questions.map((q,i)=>q.id.toString(36)+'-'+values[i]).join('.');
+}
 function decodeHash(hash){
   const old=/^#score=1\.([0-3]{20})$/.exec(hash);
   if(old)return {questions:legacyQuestions,answers:Array.from(old[1],Number),version:1};
-  const newer=/^#score=2\.([0-9a-z]{60})$/.exec(hash);
-  if(!newer)return null;
-  const ids=[],values=[];
-  for(let i=0;i<60;i+=3){ids.push(parseInt(newer[1].slice(i,i+2),36));values.push(Number(newer[1][i+2]));}
+  let ids=[],values=[],version;
+  const v2=/^#score=2\.([0-9a-z]{60})$/.exec(hash);
+  if(v2){
+    version=2;
+    for(let i=0;i<60;i+=3){ids.push(parseInt(v2[1].slice(i,i+2),36));values.push(Number(v2[1][i+2]));}
+  }else if(hash.startsWith('#score=3.')){
+    version=3;
+    const entries=hash.slice(9).split('.');
+    if(entries.length!==quizLength||entries.some(entry=>!/^([0-9a-z]{1,4})-[0-3]$/.test(entry)))return null;
+    for(const entry of entries){const [id,choice]=entry.split('-');ids.push(parseInt(id,36));values.push(Number(choice));}
+  }else return null;
   if(new Set(ids).size!==quizLength||ids.some(id=>!questionById.has(id))||values.some(choice=>!Number.isInteger(choice)||choice<0||choice>3))return null;
-  return {questions:ids.map(id=>questionById.get(id)),answers:values,version:2};
+  return {questions:ids.map(id=>questionById.get(id)),answers:values,version};
 }
 function showNotice(message){const notice=document.querySelector('#notice');notice.textContent=message;notice.classList.remove('hidden');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.classList.add('hidden'),2600);}
 function showResult(values,shared){
@@ -97,8 +142,12 @@ async function shareResult(){
     showNotice(copied?'Ссылка скопирована':'Не удалось скопировать ссылку');
   }
 }
-const shared=decodeHash(location.hash);
-if(shared){questions=shared.questions;answers=shared.answers;resultVersion=shared.version;showResult(shared.answers,true);}else renderHome();
+function renderRoute(){
+  const shared=decodeHash(location.hash);
+  if(shared){questions=shared.questions;answers=shared.answers;resultVersion=shared.version;showResult(shared.answers,true);}else renderHome();
+}
+window.addEventListener('hashchange',renderRoute);
+renderRoute();
 </script>
 </body>
 </html>
