@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Сложный квиз по Гарри Поттеру — Искра Алфеи</title>
-<meta name="description" content="20 сложных вопросов по миру Гарри Поттера. Ответь, набери баллы и сравни результат с друзьями.">
+<meta name="description" content="20 случайных вопросов из 100 по миру Гарри Поттера. Ответь, набери баллы и сравни результат с друзьями.">
 <meta name="theme-color" content="#192b3d">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
@@ -15,9 +15,10 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
 <header><div class="header-row"><a class="brand" href="./"><span>✦</span>искра алфеи</a><a class="home-link" href="./">← Все квизы</a></div></header>
 <main id="app"></main>
 <footer>Неофициальная фан-викторина. Факты сверены с Harry Potter Lexicon; ссылки на источники доступны после каждого ответа.</footer>
+<script src="./harry-potter-questions.js"></script>
 <script>
 'use strict';
-const questions=[
+const legacyQuestions=[
   {tag:'Запретный лес',icon:'🕸️',points:4,q:'Как звали акромантула, с которой Арагог создал колонию в Запретном лесу?',options:['Мораг','Мосаг','Винки','Арагна'],answer:1,why:'Пару Арагога звали Мосаг.',source:'https://www.hp-lexicon.org/character/mosag/'},
   {tag:'Хогвартс',icon:'🛁',points:3,q:'Какой пароль Седрик подсказал Гарри для входа в ванную старост?',options:['Pine Fresh','Caput Draconis','Fizzing Whizbee','Dilligrout'],answer:0,why:'Паролем была фраза Pine Fresh.',source:'https://www.hp-lexicon.org/place/hogwarts-school-of-witchcraft-and-wizardry/hogwarts-fifth-floor/prefects-bathroom/'},
   {tag:'Квиддич',icon:'🧹',points:4,q:'С каким счётом закончился финал чемпионата мира по квиддичу 1994 года — Ирландия против Болгарии?',options:['160:170','150:160','170:160','180:170'],answer:2,why:'Ирландия победила 170:160, хотя Крам поймал снитч.',source:'https://www.hp-lexicon.org/thing/bulgaria-national-team/'},
@@ -38,34 +39,50 @@ const questions=[
   {tag:'Квиддич',icon:'🪙',points:4,q:'Какую сумму Фред и Джордж поставили у Людо Бэгмена на исход финала чемпионата мира?',options:['37 галлеонов, 15 сиклей и 3 кната','17 галлеонов, 15 сиклей и 3 кната','37 галлеонов, 5 сиклей и 13 кнатов','30 галлеонов, 17 сиклей и 5 кнатов'],answer:0,why:'Близнецы поставили все свои деньги: 37 галлеонов, 15 сиклей и 3 кната.',source:'https://www.hp-lexicon.org/character/weasley-family/fred-weasley/'},
   {tag:'Гриффиндор',icon:'🦁',points:3,q:'Какой пароль открыл Гарри вход в гостиную Гриффиндора в его первый вечер в Хогвартсе?',options:['Fortuna Major','Caput Draconis','Abstinence','Balderdash'],answer:1,why:'Перси назвал Полной Даме пароль Caput Draconis.',source:'https://www.hp-lexicon.org/thing/portrait-hole/'},
   {tag:'История квиддича',icon:'🟡',points:4,q:'Кто изобрёл золотой снитч как замену охраняемой птице сниджет?',options:['Квентин Тримбл','Девлин Уайтхорн','Боуман Райт','Людо Бэгмен'],answer:2,why:'Золотой снитч создал Боуман Райт, мастер чар по металлу.',source:'https://www.hp-lexicon.org/character/bowman-wright/'}
-];
+
+].map((q,id)=>({id,...q}));
+const questionBank=[...legacyQuestions,...extraQuestions];
+const questionById=new Map(questionBank.map(q=>[q.id,q]));
+const quizLength=20;
 const app=document.querySelector('#app');
-const maxPoints=questions.reduce((total,q)=>total+q.points,0);
-let answers=[],step=0,noticeTimer;
+let questions=[],optionOrders=[],answers=[],step=0,noticeTimer,resultVersion=2;
+function shuffle(items){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
+function chooseQuestions(){return shuffle(questionBank).slice(0,quizLength);}
+function maxPoints(){return questions.reduce((total,q)=>total+q.points,0);}
 function renderHome(){
-  app.innerHTML=`<section class="hero"><div class="eyebrow">Квиз по миру Гарри Поттера</div><h1>Сможешь пройти<br>испытание для знатоков?</h1><p>Здесь помогут детали, которые легко пропустить даже после нескольких перечитываний. За правильный ответ получишь от 3 до 4 баллов. После каждого вопроса покажем короткий разбор.</p><div class="emblem" aria-hidden="true"><svg viewBox="0 0 640 210" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><circle cx="487" cy="55" r="36" fill="#e9d095"/><path d="M0 196h640v14H0zM143 198V96h45V72l21-25 20 25v126h35V87h43V61l17-23 17 23v137h32V86h47v112h30v-51h42v51" fill="#111f31"/><path d="M133 96h66l-33-29zm122-9h60l-30-30zm59-26h54l-27-34zm54 25h61l-31-30z" fill="#111f31"/><path d="M166 137v29m42-68v30m78-6v29m56-40v26m54-24v25m75 34v20" stroke="#d8ae69" stroke-width="8" stroke-linecap="round"/><path d="M46 80c78 15 127-8 192-44" fill="none" stroke="#e9d095" stroke-width="2" opacity=".7"/><g fill="#fff0b8"><circle cx="87" cy="51" r="2"/><circle cx="374" cy="24" r="2"/><circle cx="551" cy="112" r="2"/></g></svg></div><div class="stat-row"><span>20 сложных вопросов</span><span>До ${maxPoints} баллов</span><span>Ответы с источниками</span></div><button class="primary" id="start">Начать испытание <span>→</span></button></section>`;
+  app.innerHTML=`<section class="hero"><div class="eyebrow">Квиз по миру Гарри Поттера</div><h1>Сможешь пройти<br>испытание для знатоков?</h1><p>Здесь помогут детали, которые легко пропустить даже после нескольких перечитываний. За правильный ответ получишь от 3 до 4 баллов. После каждого вопроса покажем короткий разбор.</p><div class="emblem" aria-hidden="true"><svg viewBox="0 0 640 210" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><circle cx="487" cy="55" r="36" fill="#e9d095"/><path d="M0 196h640v14H0zM143 198V96h45V72l21-25 20 25v126h35V87h43V61l17-23 17 23v137h32V86h47v112h30v-51h42v51" fill="#111f31"/><path d="M133 96h66l-33-29zm122-9h60l-30-30zm59-26h54l-27-34zm54 25h61l-31-30z" fill="#111f31"/><path d="M166 137v29m42-68v30m78-6v29m56-40v26m54-24v25m75 34v20" stroke="#d8ae69" stroke-width="8" stroke-linecap="round"/><path d="M46 80c78 15 127-8 192-44" fill="none" stroke="#e9d095" stroke-width="2" opacity=".7"/><g fill="#fff0b8"><circle cx="87" cy="51" r="2"/><circle cx="374" cy="24" r="2"/><circle cx="551" cy="112" r="2"/></g></svg></div><div class="stat-row"><span>100 вопросов в банке</span><span>20 случайных за попытку</span><span>Ответы с источниками</span></div><button class="primary" id="start">Начать испытание <span>→</span></button></section>`;
   document.querySelector('#start').onclick=startQuiz;
 }
-function startQuiz(){answers=[];step=0;history.replaceState(null,'',location.pathname);renderQuestion();}
+function startQuiz(){questions=chooseQuestions();optionOrders=questions.map(()=>shuffle([0,1,2,3]));answers=[];step=0;resultVersion=2;history.replaceState(null,'',location.pathname);renderQuestion();}
 function focusTitle(){const title=app.querySelector('h1,h2');title.tabIndex=-1;title.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
 function renderQuestion(){
   const q=questions[step],chosen=answers[step];
-  app.innerHTML=`<section class="quiz"><div class="topline"><span>Архив волшебного мира</span><span>Вопрос ${step+1} из ${questions.length}</span></div><div class="progress" role="progressbar" aria-label="Прогресс квиза" aria-valuemin="0" aria-valuemax="${questions.length}" aria-valuenow="${step}"><i style="width:${step/questions.length*100}%"></i></div><div class="qcard"><div class="qmeta"><span>${q.tag}</span><span>${q.points} балла за ответ</span></div><div class="icon" aria-hidden="true">${q.icon}</div><h2>${q.q}</h2><div class="options" role="group" aria-label="Варианты ответа">${q.options.map((option,i)=>`<button class="option ${chosen!==undefined?(i===q.answer?'correct':i===chosen?'wrong':''):''}" data-answer="${i}" ${chosen!==undefined?'disabled':''}><span class="num">${i+1}</span><span>${option}</span></button>`).join('')}</div>${chosen!==undefined?`<div class="feedback" role="status"><strong>${chosen===q.answer?`Верно · +${q.points} балла`:'Не угадала · +0 баллов'}</strong><p>${q.why}</p><a href="${q.source}" target="_blank" rel="noopener noreferrer">Проверить факт ↗</a></div>`:''}<div class="navigation"><span>${chosen===undefined?'Выбери один ответ':'Ответ принят'}</span><button class="primary" id="next" ${chosen===undefined?'disabled':''}>${step===questions.length-1?'Узнать счёт':'Следующий вопрос'} <span>→</span></button></div></div></section>`;
+  app.innerHTML=`<section class="quiz"><div class="topline"><span>Архив волшебного мира</span><span>Вопрос ${step+1} из ${questions.length}</span></div><div class="progress" role="progressbar" aria-label="Прогресс квиза" aria-valuemin="0" aria-valuemax="${questions.length}" aria-valuenow="${step}"><i style="width:${step/questions.length*100}%"></i></div><div class="qcard"><div class="qmeta"><span>${q.tag}</span><span>${q.points} балла за ответ</span></div><div class="icon" aria-hidden="true">${q.icon}</div><h2>${q.q}</h2><div class="options" role="group" aria-label="Варианты ответа">${optionOrders[step].map((i,visualIndex)=>`<button class="option ${chosen!==undefined?(i===q.answer?'correct':i===chosen?'wrong':''):''}" data-answer="${i}" ${chosen!==undefined?'disabled':''}><span class="num">${visualIndex+1}</span><span>${q.options[i]}</span></button>`).join('')}</div>${chosen!==undefined?`<div class="feedback" role="status"><strong>${chosen===q.answer?`Верно · +${q.points} балла`:'Не угадала · +0 баллов'}</strong><p>${q.why}</p><a href="${q.source}" target="_blank" rel="noopener noreferrer">Проверить факт ↗</a></div>`:''}<div class="navigation"><span>${chosen===undefined?'Выбери один ответ':'Ответ принят'}</span><button class="primary" id="next" ${chosen===undefined?'disabled':''}>${step===questions.length-1?'Узнать счёт':'Следующий вопрос'} <span>→</span></button></div></div></section>`;
   if(chosen===undefined)app.querySelectorAll('[data-answer]').forEach(button=>button.onclick=()=>{answers[step]=Number(button.dataset.answer);renderQuestion();});
   document.querySelector('#next').onclick=()=>{if(answers[step]===undefined)return;if(step<questions.length-1){step++;renderQuestion();}else showResult(answers,false);};
   focusTitle();
 }
-function resultHash(values){return '#score=1.'+values.join('');}
-function decodeHash(hash){const match=/^#score=1\.([0-3]+)$/.exec(hash);return match&&match[1].length===questions.length?Array.from(match[1],Number):null;}
+function resultHash(values){return resultVersion===1?'#score=1.'+values.join(''):'#score=2.'+questions.map((q,i)=>q.id.toString(36).padStart(2,'0')+values[i]).join('');}
+function decodeHash(hash){
+  const old=/^#score=1\.([0-3]{20})$/.exec(hash);
+  if(old)return {questions:legacyQuestions,answers:Array.from(old[1],Number),version:1};
+  const newer=/^#score=2\.([0-9a-z]{60})$/.exec(hash);
+  if(!newer)return null;
+  const ids=[],values=[];
+  for(let i=0;i<60;i+=3){ids.push(parseInt(newer[1].slice(i,i+2),36));values.push(Number(newer[1][i+2]));}
+  if(new Set(ids).size!==quizLength||ids.some(id=>!questionById.has(id))||values.some(choice=>!Number.isInteger(choice)||choice<0||choice>3))return null;
+  return {questions:ids.map(id=>questionById.get(id)),answers:values,version:2};
+}
 function showNotice(message){const notice=document.querySelector('#notice');notice.textContent=message;notice.classList.remove('hidden');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.classList.add('hidden'),2600);}
 function showResult(values,shared){
   answers=[...values];
   const total=values.reduce((score,choice,i)=>score+(choice===questions[i].answer?questions[i].points:0),0);
+  const possible=maxPoints();
   const correct=values.filter((choice,i)=>choice===questions[i].answer).length;
-  const title=total/maxPoints>=.85?'Хранитель волшебного архива':total/maxPoints>=.6?'Исследователь Хогвартса':total/maxPoints>=.35?'Ученик тайных коридоров':'Начало магического пути';
+  const title=total/possible>=.85?'Хранитель волшебного архива':total/possible>=.6?'Исследователь Хогвартса':total/possible>=.35?'Ученик тайных коридоров':'Начало магического пути';
   const missed=questions.map((q,i)=>({q,choice:values[i]})).filter(({q,choice})=>choice!==q.answer);
   history.replaceState(null,'',resultHash(values));
-  app.innerHTML=`<section class="result-card"><div class="eyebrow">${shared?'Результат, которым поделились':'Твой результат'}</div><div class="points">${total}<small> / ${maxPoints}</small></div><h1>${title}</h1><p>Верных ответов: ${correct} из ${questions.length}. ${correct===questions.length?'Ни одной ошибки — это впечатляет!':'Каждая тайна становится понятнее после разбора.'}</p><div class="result-actions"><button class="primary" id="share">Скопировать результат <span>↗</span></button><button class="secondary" id="restart">Пройти ещё раз</button>${missed.length?'<button class="secondary" id="review-toggle" aria-expanded="false">Разобрать ошибки</button>':''}</div><div class="notice hidden" id="notice" role="status"></div>${missed.length?`<div class="review hidden" id="review"><h2>Вопросы, где можно было набрать больше</h2><ol>${missed.map(({q})=>`<li>${q.q}<strong>Правильный ответ: ${q.options[q.answer]}</strong><a href="${q.source}" target="_blank" rel="noopener noreferrer">Источник ↗</a></li>`).join('')}</ol></div>`:''}</section>`;
+  app.innerHTML=`<section class="result-card"><div class="eyebrow">${shared?'Результат, которым поделились':'Твой результат'}</div><div class="points">${total}<small> / ${possible}</small></div><h1>${title}</h1><p>Верных ответов: ${correct} из ${questions.length}. ${correct===questions.length?'Ни одной ошибки — это впечатляет!':'Каждая тайна становится понятнее после разбора.'}</p><div class="result-actions"><button class="primary" id="share">Скопировать результат <span>↗</span></button><button class="secondary" id="restart">Пройти ещё раз</button>${missed.length?'<button class="secondary" id="review-toggle" aria-expanded="false">Разобрать ошибки</button>':''}</div><div class="notice hidden" id="notice" role="status"></div>${missed.length?`<div class="review hidden" id="review"><h2>Вопросы, где можно было набрать больше</h2><ol>${missed.map(({q})=>`<li>${q.q}<strong>Правильный ответ: ${q.options[q.answer]}</strong><a href="${q.source}" target="_blank" rel="noopener noreferrer">Источник ↗</a></li>`).join('')}</ol></div>`:''}</section>`;
   document.querySelector('#restart').onclick=startQuiz;
   document.querySelector('#share').onclick=shareResult;
   if(missed.length)document.querySelector('#review-toggle').onclick=()=>{const review=document.querySelector('#review'),button=document.querySelector('#review-toggle');review.classList.toggle('hidden');button.setAttribute('aria-expanded',String(!review.classList.contains('hidden')));};
@@ -81,7 +98,7 @@ async function shareResult(){
   }
 }
 const shared=decodeHash(location.hash);
-if(shared)showResult(shared,true);else renderHome();
+if(shared){questions=shared.questions;answers=shared.answers;resultVersion=shared.version;showResult(shared.answers,true);}else renderHome();
 </script>
 </body>
 </html>
