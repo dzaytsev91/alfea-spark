@@ -15,10 +15,10 @@ function setup(storage=new Map(),blocked=false){
   vm.createContext(sandbox);vm.runInContext(scripts+'\nshowNotice=()=>{};',sandbox);
   return {run:code=>vm.runInContext(code,sandbox),element,getCopied:()=>copied};
 }
-test('bank has 36 valid distinct questions covering all six episodes',()=>{
+test('bank has 72 valid distinct questions covering all six episodes',()=>{
  const {run}=setup(),bank=run('questionBank');
- assert.equal(bank.length,36);assert.equal(new Set(bank.map(q=>q.id)).size,36);assert.equal(new Set(bank.map(q=>q.q)).size,36);
- for(let ep=1;ep<=6;ep++)assert.equal(bank.filter(q=>q.episode===ep).length,6);
+ assert.equal(bank.length,72);assert.equal(new Set(bank.map(q=>q.id)).size,72);assert.equal(new Set(bank.map(q=>q.q)).size,72);
+ for(let ep=1;ep<=6;ep++)assert.equal(bank.filter(q=>q.episode===ep).length,12);
  for(const q of bank){assert.equal(new Set(q.options).size,4);assert(q.options[q.answer]);assert.equal(q.points,3);assert(q.why);assert.equal(new URL(q.source).protocol,'https:');assert(!/[<>]|\[MASKED/.test(JSON.stringify(q)));}
 });
 test('new questions are prioritized after reload and with blocked storage',()=>{
@@ -27,13 +27,13 @@ test('new questions are prioritized after reload and with blocked storage',()=>{
   const first=a.run('questions=chooseQuestions();questions.forEach(q=>rememberQuestion(q.id));questions.map(q=>q.id)');
   const b=blocked?a:setup(storage),second=b.run('chooseQuestions()');
   assert.equal(second.length,20);assert.equal(new Set(second.map(q=>q.id)).size,20);
-  assert.equal(second.filter(q=>!first.includes(q.id)).length,16);
+  assert.equal(second.filter(q=>!first.includes(q.id)).length,20);
  }
 });
 test('random samples vary and all questions can be selected',()=>{
  const a=setup(),seen=new Set(),orders=new Set();
  for(let i=0;i<100;i++){const qs=a.run('chooseQuestions()');qs.forEach(q=>seen.add(q.id));orders.add(qs.map(q=>q.id).join(','));}
- assert.equal(seen.size,36);assert.equal(orders.size,100);
+ assert.equal(seen.size,72);assert.equal(orders.size,100);
 });
 test('share roundtrip preserves exact score and only copies the URL',async()=>{
  const a=setup();a.run('questions=chooseQuestions();showResult(questions.map(q=>q.answer),false)');

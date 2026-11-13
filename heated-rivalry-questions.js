@@ -611,5 +611,617 @@ const questionBank=[
     "answer": 3,
     "why": "Шейн ссылается на Amazon.",
     "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 37,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую пару «номер — время» Шейн называет для встречи после рекламы?",
+    "options": [
+      "1410 — 21:00",
+      "1401 — 21:00",
+      "1410 — 22:00",
+      "1401 — 22:00"
+    ],
+    "answer": 0,
+    "why": "В приглашении звучат 1410 и девять вечера.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 38,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Кто, по словам Ильи, предложил совместную рекламу?",
+    "options": [
+      "Тренер Бостона",
+      "Сам Илья",
+      "Юна",
+      "Агент Шейна"
+    ],
+    "answer": 1,
+    "why": "Илья приписывает идею себе.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 39,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Что заказали опоздавшему Шейну на семейном обеде?",
+    "options": [
+      "Лосось и киноа",
+      "Тунец и киноа",
+      "Лосось и бурый рис",
+      "Тунец и бурый рис"
+    ],
+    "answer": 2,
+    "why": "Его уже ждут лосось и бурый рис.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 40,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "От какого часового бренда Юна зачитывает письмо за обедом?",
+    "options": [
+      "Omega",
+      "TAG Heuer",
+      "Breitling",
+      "Rolex"
+    ],
+    "answer": 3,
+    "why": "Юна сообщает о согласии Rolex.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 41,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какая пара животных действительно входит в примеры YouTube-видео Шейна?",
+    "options": [
+      "Корова и утка",
+      "Лиса и гусь",
+      "Тигр и собака",
+      "Медведь и олень"
+    ],
+    "answer": 0,
+    "why": "Он приводит пример дружбы коровы и утки.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 42,
+    "episode": 1,
+    "tag": "Серия 1 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Кем был первый партнёр Ильи в России, о котором он рассказывает Шейну?",
+    "options": [
+      "Братом одноклассника",
+      "Сыном тренера",
+      "Сыном врача",
+      "Братом капитана"
+    ],
+    "answer": 1,
+    "why": "Илья вспоминает сына своего тренера.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 43,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой травмой Светлана объясняет шансы Бостона обойти Монреаль?",
+    "options": [
+      "Травмой Марло",
+      "Травмой Вона",
+      "Травмой Мийтки",
+      "Травмой Матесона"
+    ],
+    "answer": 2,
+    "why": "Она считает, что Мийтка травмирован.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 44,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Кого Светлана прогнозирует в финале от Запада?",
+    "options": [
+      "Чикаго",
+      "Анахайм",
+      "Колорадо",
+      "Сан-Франциско"
+    ],
+    "answer": 3,
+    "why": "Её прогноз — молодая команда Сан-Франциско.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 45,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "На сколько раньше собственного пари Светлана допускает победу Ильи в Кубке?",
+    "options": [
+      "На год",
+      "На два года",
+      "На три года",
+      "На полгода"
+    ],
+    "answer": 0,
+    "why": "Она поставила с отцом на победу годом позже.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 46,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую статистику Ильи сообщают перед шестым матчем финала?",
+    "options": [
+      "8 голов за 10 матчей",
+      "10 голов за 6 матчей",
+      "10 голов за 8 матчей",
+      "8 голов за 6 матчей"
+    ],
+    "answer": 1,
+    "why": "Комментатор сообщает о десяти голах за шесть игр.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 47,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Где, по разговору на гала-вечере, находится Полина?",
+    "options": [
+      "В Сочи",
+      "В Бостоне",
+      "В Москве",
+      "В Петербурге"
+    ],
+    "answer": 2,
+    "why": "Полина осталась в Москве.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 48,
+    "episode": 2,
+    "tag": "Серия 2 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой город Саша обсуждает с Ильёй как своё нынешнее место жизни?",
+    "options": [
+      "Лион",
+      "Марсель",
+      "Ниццу",
+      "Париж"
+    ],
+    "answer": 3,
+    "why": "Илья спрашивает Сашу о жизни в Париже.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 49,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую еду Шон доверяет Кипу после провала с подносом?",
+    "options": [
+      "Киши",
+      "Канапе",
+      "Тарталетки с икрой",
+      "Мини-бургеры"
+    ],
+    "answer": 0,
+    "why": "Шон выбирает сухие киши.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 50,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую кухню Скотт предлагает после благотворительного вечера?",
+    "options": [
+      "Японскую",
+      "Мексиканскую",
+      "Итальянскую",
+      "Тайскую"
+    ],
+    "answer": 1,
+    "why": "Первое предложение — мексиканская еда.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 51,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой салат Скотт оставляет Кипу в холодильнике?",
+    "options": [
+      "С пастой и курицей, без оливок",
+      "С пастой и тунцом, без оливок",
+      "С пастой и курицей, без феты",
+      "С пастой и тунцом, без феты"
+    ],
+    "answer": 2,
+    "why": "Он уточняет: курица, без феты.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 52,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Как называется бар, куда Кип приглашает Скотта на день рождения?",
+    "options": [
+      "The Bluebird",
+      "The Sandpiper",
+      "The Nightingale",
+      "The Kingfisher"
+    ],
+    "answer": 3,
+    "why": "Кип называет The Kingfisher.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 53,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "На какой день недели приходится день рождения Кипа?",
+    "options": [
+      "Воскресенье",
+      "Субботу",
+      "Пятницу",
+      "Четверг"
+    ],
+    "answer": 0,
+    "why": "Приглашая Скотта, Кип говорит о воскресенье.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 54,
+    "episode": 3,
+    "tag": "Серия 3 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "В какой бостонский университет Кип подтверждает подачу заявки отцу?",
+    "options": [
+      "Tufts",
+      "BU",
+      "BC",
+      "Northeastern"
+    ],
+    "answer": 1,
+    "why": "Он отдельно подтверждает заявку в BU.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 55,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Как далеко родительский коттедж от дома Шейна у озера?",
+    "options": [
+      "В 30 минутах",
+      "В 45 минутах",
+      "В 10 минутах",
+      "В 20 минутах"
+    ],
+    "answer": 2,
+    "why": "В телесюжете названы десять минут.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 56,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Почему Илья говорит, что утром после ночёвки не будет тренировки?",
+    "options": [
+      "Команде дали выходной",
+      "Тренировку перенесли на вечер",
+      "Команда вылетает до рассвета",
+      "Назначен дневной матч"
+    ],
+    "answer": 3,
+    "why": "На следующий день играют днём.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 57,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой напиток Илья проверяет на холодность, готовя сэндвичи?",
+    "options": [
+      "Имбирный эль",
+      "Кола",
+      "Тоник",
+      "Лимонад"
+    ],
+    "answer": 0,
+    "why": "Он спрашивает об имбирном эле.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 58,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой новый бизнес Светланы Илья упоминает за сэндвичами?",
+    "options": [
+      "Аренду яхт",
+      "Продажу дорогих автомобилей",
+      "Аренду дорогих автомобилей",
+      "Продажу яхт"
+    ],
+    "answer": 1,
+    "why": "Светлана продаёт дорогие машины.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 59,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Почему, по Илье, во Флориде его не ненавидят?",
+    "options": [
+      "Там живёт его спонсор",
+      "Он проводит там летние сборы",
+      "Там много бостонцев",
+      "Он играл за местный клуб"
+    ],
+    "answer": 2,
+    "why": "Он объясняет это количеством бостонцев.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 60,
+    "episode": 4,
+    "tag": "Серия 4 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Чем занимается подруга Джеки, с которой Хейден хочет познакомить Шейна?",
+    "options": [
+      "Йогой для спортсменов",
+      "Детской гимнастикой",
+      "Реабилитацией после травм",
+      "Йогой для мам"
+    ],
+    "answer": 3,
+    "why": "Хейден описывает занятия как йогу для мам.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 61,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой перестановкой в большинстве Колорадо недовольна Светлана?",
+    "options": [
+      "Матесон в первой бригаде, Петров во второй",
+      "Петров в первой бригаде, Матесон во второй",
+      "Матесон в запасе, Петров в меньшинстве",
+      "Петров в запасе, Матесон в меньшинстве"
+    ],
+    "answer": 0,
+    "why": "Она считает, что Петров заслуживает первую бригаду.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 62,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Чем в разговоре объясняют участие Матесона в Матче звёзд?",
+    "options": [
+      "Решением капитанов",
+      "Голосованием болельщиков",
+      "Выбором тренеров",
+      "Заменой травмированного"
+    ],
+    "answer": 1,
+    "why": "За Матесона проголосовали болельщики.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 63,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую помощь Шейн признаёт, когда Илья замечает перемену в одежде?",
+    "options": [
+      "Юна сменила его гардероб",
+      "Спонсор прислал новую коллекцию",
+      "Он нанял стилиста",
+      "Роуз выбрала весь гардероб"
+    ],
+    "answer": 2,
+    "why": "Шейн признаётся, что нанял стилиста.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 64,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Почему после игры в бассейне Илья просит Шейна дать детям деньги?",
+    "options": [
+      "Автомат не принимает его карту",
+      "Он отдал наличные тренеру",
+      "В бассейне потерялись купюры",
+      "У него нет кошелька"
+    ],
+    "answer": 3,
+    "why": "Обещав награду, Илья обнаруживает отсутствие кошелька.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 65,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какую пару следующих выездов называют после Матча звёзд: Илья — Шейн?",
+    "options": [
+      "Колумбус — Торонто",
+      "Торонто — Колумбус",
+      "Колумбус — Оттава",
+      "Оттава — Торонто"
+    ],
+    "answer": 0,
+    "why": "Илья летит в Колумбус, Шейн — в Торонто.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 66,
+    "episode": 5,
+    "tag": "Серия 5 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какие родственники Ильи, по его словам, служат в полиции?",
+    "options": [
+      "Отец и дед",
+      "Отец и брат",
+      "Отец и дядя",
+      "Брат и дядя"
+    ],
+    "answer": 1,
+    "why": "Он называет отца и брата.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 67,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "В каком канадском ведомстве работает отец Шейна?",
+    "options": [
+      "Department of Finance",
+      "Privy Council Office",
+      "Treasury Board",
+      "Bank of Canada"
+    ],
+    "answer": 2,
+    "why": "Шейн называет Treasury Board of Canada.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 68,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Откуда поступает вода в загородный дом Шейна?",
+    "options": [
+      "Из частного озера",
+      "Из горного источника",
+      "Из поселкового водопровода",
+      "Из собственной скважины"
+    ],
+    "answer": 3,
+    "why": "Шейн хвастается собственной скважиной.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 69,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "На какой срок герои договариваются быть откровенными в коттедже?",
+    "options": [
+      "На две недели",
+      "На десять дней",
+      "На три недели",
+      "На месяц"
+    ],
+    "answer": 0,
+    "why": "Предложение касается следующих двух недель.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 70,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Как зовут отца Светланы, которого Илья называет в разговоре о браке?",
+    "options": [
+      "Александр Вадилевич",
+      "Сергей Витров",
+      "Сергей Вадилевич",
+      "Александр Витров"
+    ],
+    "answer": 1,
+    "why": "Илья называет вратаря Сергея Витрова.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 71,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Какой финансовый довод Шейн приводит в пользу Оттавы?",
+    "options": [
+      "Освобождение от потолка зарплат",
+      "Покрытие контракта лигой",
+      "Большой запас до потолка зарплат",
+      "Готовность Бостона платить часть контракта"
+    ],
+    "answer": 2,
+    "why": "По словам Шейна, Оттава далеко от потолка зарплат.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
+  },
+  {
+    "id": 72,
+    "episode": 6,
+    "tag": "Серия 6 · эксперт",
+    "icon": "🏒",
+    "points": 3,
+    "q": "Как распределяются команды в видеоигре у коттеджа?",
+    "options": [
+      "Илья — Бостон, Шейн — Монреаль",
+      "Илья — Оттава, Шейн — Монреаль",
+      "Илья — Монреаль, Шейн — Оттава",
+      "Илья — Монреаль, Шейн — Бостон"
+    ],
+    "answer": 3,
+    "why": "Играя, они выбирают команды друг друга.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=heated-rivalry-2025"
   }
 ];
