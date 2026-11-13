@@ -109,5 +109,16 @@ const quizCatalog=[
     "color": "#66844e",
     "art": "lab",
     "count": 30
+  },
+  {
+    "slug": "supernatural",
+    "title": "Сверхъестественное",
+    "category": "series",
+    "scope": "Сериал · спойлеры к сезонам 1–15",
+    "description": "Ловушки охотников, временные петли и детали небесных интриг. Помнишь больше, чем имена Винчестеров?",
+    "icon": "🧂",
+    "color": "#78474b",
+    "art": "hunters",
+    "count": 30
   }
 ];

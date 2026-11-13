@@ -2,6 +2,7 @@
 // Original decorative SVG illustrations, shared by the cards and quiz intros.
 function renderQuizArt(kind,color){
   const drawings={
+    hunters:'<circle cx="260" cy="119" r="87"/><circle cx="260" cy="119" r="74"/><path d="m260 45 44 134-115-83h142l-115 83Z"/>',
     swords:'<path d="m226 40 119 126m-45-126L181 166"/><path d="m209 133 35 34m32-34 35 34M217 157l-22 24m101-24 22 24"/>',
     dragon:'<path d="m183 157 29-81 55-26 51 28-33 20 24 13-34 20 10 45-50-15-37 21 12-39-27-6m32-58-5-31 30 19m26 11 22-28 9 37"/><circle cx="265" cy="86" r="3" fill="currentColor"/>',
     blocks:'<path d="m260 35 90 48v91l-90 48-90-48V83Zm-90 48 90 48 90-48m-90 48v91m-45-115 90-48m-90 24 90 48m-135-24v91m90-91v91"/>',

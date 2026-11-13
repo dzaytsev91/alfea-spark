@@ -18,9 +18,9 @@ function setup(slug=catalog[0].slug,{storage=new Map(),blocked=false,loadFailure
  if(banks[slug])vm.runInContext('questionBank='+JSON.stringify(banks[slug])+';questionById=new Map(questionBank.map(q=>[q.id,q]));',sandbox);
  return {run:code=>vm.runInContext(code,sandbox),element,storage,getCopied:()=>copied,getPath:()=>path,getFetched:()=>fetched};
 }
-test('ten distinct quizzes with 300 complete and unique questions',()=>{
- assert.equal(catalog.length,10);assert.equal(new Set(catalog.map(q=>q.slug)).size,10);
- assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,5);
+test('eleven distinct quizzes with 330 complete and unique questions',()=>{
+ assert.equal(catalog.length,11);assert.equal(new Set(catalog.map(q=>q.slug)).size,11);
+ assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,6);
  const seen=new Set();
  const normalize=s=>s.toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]/gu,'');
  for(const quiz of catalog){
@@ -31,7 +31,7 @@ test('ten distinct quizzes with 300 complete and unique questions',()=>{
    const key=normalize(q.q);assert(!seen.has(key),q.q);seen.add(key);
   }
  }
- assert.equal(seen.size,300);
+ assert.equal(seen.size,330);
 });
 test('every bank produces random valid attempts and prioritizes all unseen questions after reload',()=>{
  for(const quiz of catalog){
