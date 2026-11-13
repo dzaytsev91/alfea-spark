@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Избранник богов",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой клинок Церис предлагает вернуть утонувшему Аки?",
+    "options": [
+      "Броквар",
+      "Ирис",
+      "Тор’хаэрн",
+      "Арондит"
+    ],
+    "answer": 0,
+    "why": "Семейный меч — Броквар.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/possession.php"
+  },
+  {
+    "id": 2,
+    "tag": "Избранник богов",
+    "icon": "🐺",
+    "points": 3,
+    "q": "На каком острове Церис пытается исцелить Удальрика?",
+    "options": [
+      "Ан Скеллиг",
+      "Спикероог",
+      "Хиндарсфьялль",
+      "Фареры"
+    ],
+    "answer": 1,
+    "why": "Ярл живёт на Спикерооге.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/possession.php"
+  },
+  {
+    "id": 3,
+    "tag": "Избранник богов",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Кто забирает ребёнка за печью в обманном плане Церис?",
+    "options": [
+      "Крах",
+      "Фолан",
+      "Хьорт",
+      "Эйрик"
+    ],
+    "answer": 2,
+    "why": "Хьорт заранее ждёт за печью.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/possession.php"
+  },
+  {
+    "id": 4,
+    "tag": "Избранник богов",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой знак успокаивает Удальрика во время боя с химом?",
+    "options": [
+      "Ирден",
+      "Квен",
+      "Аард",
+      "Аксий"
+    ],
+    "answer": 3,
+    "why": "Аксий возвращает ярла в комнату.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/possession.php"
+  },
+  {
+    "id": 5,
+    "tag": "Избранник богов",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Чем Удальрик жертвует по требованию «богов» после возвращения меча?",
+    "options": [
+      "Глазом",
+      "Пальцем",
+      "Ухом",
+      "Языком"
+    ],
+    "answer": 0,
+    "why": "Возвращение Броквара не изгоняет хима.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/possession.php"
+  },
+  {
+    "id": 6,
+    "tag": "Владыка Ундвика",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Кого тролли готовятся сварить, когда Геральт идёт по следам экспедиции?",
+    "options": [
+      "Хьялмара",
+      "Фолана",
+      "Виги",
+      "Харальда"
+    ],
+    "answer": 1,
+    "why": "Фолана можно спасти боем или загадками.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/thelordofundvik.php"
+  },
+  {
+    "id": 7,
+    "tag": "Владыка Ундвика",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Чего нельзя касаться ногами, забирая ключ от клетки Виги?",
+    "options": [
+      "Воды",
+      "Деревянных досок",
+      "Снега",
+      "Костей"
+    ],
+    "answer": 2,
+    "why": "Хруст снега будит великана.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/thelordofundvik.php"
+  },
+  {
+    "id": 8,
+    "tag": "Владыка Ундвика",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что великан использует как оружие в следующей фазе боя?",
+    "options": [
+      "Мачту",
+      "Каменную колонну",
+      "Руль корабля",
+      "Корабельный якорь"
+    ],
+    "answer": 3,
+    "why": "Великан начинает размахивать якорем.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/thelordofundvik.php"
+  },
+  {
+    "id": 9,
+    "tag": "Владыка Ундвика",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что делает найденный хорнвальский рог с сиренами?",
+    "options": [
+      "Сбивает их с воздуха",
+      "Приручает их",
+      "Накладывает сон",
+      "Снимает кровотечение"
+    ],
+    "answer": 0,
+    "why": "Рог помогает против летающих сирен.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/thelordofundvik.php"
+  },
+  {
+    "id": 10,
+    "tag": "Владыка Ундвика",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой предмет действительно нужен Окто для дополнительной награды?",
+    "options": [
+      "Смола",
+      "Гвозди",
+      "Бечёвка",
+      "Парусина"
+    ],
+    "answer": 1,
+    "why": "Бечёвку он упоминает, но нужны гвозди.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/thelordofundvik.php"
+  },
+  {
+    "id": 11,
+    "tag": "Свадьба",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой венок особенно нравится Шани по её словам?",
+    "options": [
+      "Из вереска",
+      "Из сирени",
+      "Из рябины",
+      "Из мирта"
+    ],
+    "answer": 2,
+    "why": "Она упоминает рябину перед праздником.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/deadmansparty.php"
+  },
+  {
+    "id": 12,
+    "tag": "Свадьба",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что приходится надеть после проигрыша низушкам в гвинт?",
+    "options": [
+      "Шутовской колпак",
+      "Свиную маску",
+      "Козлиные рога",
+      "Ослиные уши"
+    ],
+    "answer": 3,
+    "why": "Это условие свадебной игры.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/deadmansparty.php"
+  },
+  {
+    "id": 13,
+    "tag": "Свадьба",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какая карта лежит на верхнем этаже свадебного дома?",
+    "options": [
+      "Корова",
+      "Коза",
+      "Свинья",
+      "Петух"
+    ],
+    "answer": 0,
+    "why": "Нулевая по силе «Корова» вызывает защитника позже.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/deadmansparty.php"
+  },
+  {
+    "id": 14,
+    "tag": "Свадьба",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Сколько туфель нужно достать из пруда ради большей награды опыта?",
+    "options": [
+      "Все, кроме туфли Шани",
+      "Только туфлю Шани",
+      "Все три",
+      "Любые две"
+    ],
+    "answer": 1,
+    "why": "Лишняя обувь уменьшает награду.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/deadmansparty.php"
+  },
+  {
+    "id": 15,
+    "tag": "Свадьба",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Каким цветом отмечены свиньи, которых нужно загнать в загон?",
+    "options": [
+      "Синим",
+      "Белым",
+      "Жёлтым",
+      "Красным"
+    ],
+    "answer": 2,
+    "why": "У нужных свиней жёлтые отметины.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/deadmansparty.php"
+  },
+  {
+    "id": 16,
+    "tag": "Каменные сердца",
+    "icon": "🐺",
+    "points": 3,
+    "q": "В каком храме Гюнтер назначает последнюю встречу с Ольгердом?",
+    "options": [
+      "Мелитэле",
+      "Вечного Огня",
+      "Фрейи",
+      "Лильвани"
+    ],
+    "answer": 3,
+    "why": "Встреча проходит в храме Лильвани.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/whatsoeveramansoweth.php"
+  },
+  {
+    "id": 17,
+    "tag": "Каменные сердца",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой профессор объясняет способ оспорить договор О’Дима?",
+    "options": [
+      "Шезлок",
+      "Моро",
+      "Оксенфурт",
+      "Элихаль"
+    ],
+    "answer": 0,
+    "why": "Перед финалом нужно поговорить с Шезлоком.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/whatsoeveramansoweth.php"
+  },
+  {
+    "id": 18,
+    "tag": "Каменные сердца",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой редкий меч можно забрать в мире загадки О’Дима?",
+    "options": [
+      "Меч Зимнего Клинка",
+      "Отравленный серебряный меч Школы Змеи",
+      "Арондит",
+      "Ирис"
+    ],
+    "answer": 1,
+    "why": "Он спрятан в камне на ответвлении пути.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/whatsoeveramansoweth.php"
+  },
+  {
+    "id": 19,
+    "tag": "Каменные сердца",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что становится неразбиваемым зеркалом для разгадки О’Дима?",
+    "options": [
+      "Лезвие меча",
+      "Стекло мегаскопа",
+      "Вода в фонтане",
+      "Начищенный щит"
+    ],
+    "answer": 2,
+    "why": "Отражение в воде завершает испытание.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/whatsoeveramansoweth.php"
+  },
+  {
+    "id": 20,
+    "tag": "Каменные сердца",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Каким знаком нужно восстановить подачу воды к фонтану в мире загадки?",
+    "options": [
+      "Игни",
+      "Ирденом",
+      "Аксием",
+      "Аардом"
+    ],
+    "answer": 3,
+    "why": "Аард разрушает мешающую стену.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/whatsoeveramansoweth.php"
+  },
+  {
+    "id": 21,
+    "tag": "Мутации",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Кого профессор Моро пытался избавить от ведьмачьих мутаций?",
+    "options": [
+      "Сына Жерома",
+      "Брата Ролана",
+      "Отца Этьена",
+      "Ученика Рене"
+    ],
+    "answer": 0,
+    "why": "Эксперименты лишь усилили мутации сына.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/turnandfacethestrange.php"
+  },
+  {
+    "id": 22,
+    "tag": "Мутации",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что кладут на пьедестал для включения порталов лаборатории Моро?",
+    "options": [
+      "Перо грифона",
+      "Лапу горгульи",
+      "Сердце голема",
+      "Глаз циклопа"
+    ],
+    "answer": 1,
+    "why": "Лапа остаётся после боя с горгульей.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/turnandfacethestrange.php"
+  },
+  {
+    "id": 23,
+    "tag": "Мутации",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Как определить правильный портал в лаборатории Моро?",
+    "options": [
+      "По звуку воды",
+      "По положению луны",
+      "По направлению взгляда статуи",
+      "По цвету кристалла"
+    ],
+    "answer": 2,
+    "why": "Статуя указывает на нужный переход.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/turnandfacethestrange.php"
+  },
+  {
+    "id": 24,
+    "tag": "Мутации",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какое вещество из яиц требуется для аппарата Моро?",
+    "options": [
+      "Яд археспоры",
+      "Слизь утопца",
+      "Желчь вилохвоста",
+      "Белок мутировавшей гигантской сколопендры"
+    ],
+    "answer": 3,
+    "why": "Белок добывают рядом с лабораторией.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/turnandfacethestrange.php"
+  },
+  {
+    "id": 25,
+    "tag": "Мутации",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Сколько выступающих камней нужно поразить арбалетом в загадке Моро?",
+    "options": [
+      "Четыре",
+      "Три",
+      "Пять",
+      "Шесть"
+    ],
+    "answer": 0,
+    "why": "Все четыре открывают дверь.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/turnandfacethestrange.php"
+  },
+  {
+    "id": 26,
+    "tag": "Страна сказок",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какое заклинание переносит в Страну тысячи сказок?",
+    "options": [
+      "Tedd Deireadh",
+      "Expecto ludum",
+      "Expecto patronum",
+      "Aen Elle"
+    ],
+    "answer": 1,
+    "why": "Фраза произносится при открытии книги.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/beyondhillanddale.php"
+  },
+  {
+    "id": 27,
+    "tag": "Страна сказок",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Где находится красный боб?",
+    "options": [
+      "У Рапунцель",
+      "Под мостом",
+      "В животе Волка",
+      "В доме поросят"
+    ],
+    "answer": 2,
+    "why": "Его получают после восстановления сказки о Волке.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/beyondhillanddale.php"
+  },
+  {
+    "id": 28,
+    "tag": "Страна сказок",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Где лежит синий боб?",
+    "options": [
+      "В колодце Волка",
+      "На верхушке башни",
+      "В замке великана",
+      "На блюде в доме поросят"
+    ],
+    "answer": 3,
+    "why": "Дом сначала разрушают Аардом.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/beyondhillanddale.php"
+  },
+  {
+    "id": 29,
+    "tag": "Страна сказок",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Какой предмет достают из колодца, чтобы Сианна сыграла свою роль перед Волком?",
+    "options": [
+      "Красный капюшон",
+      "Золотой ключ",
+      "Хрустальную туфельку",
+      "Серебряную ложку"
+    ],
+    "answer": 0,
+    "why": "Капюшон позволяет разыграть знакомую сказку.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/beyondhillanddale.php"
+  },
+  {
+    "id": 30,
+    "tag": "Страна сказок",
+    "icon": "🐺",
+    "points": 3,
+    "q": "Что будит медведей возле Златовласки?",
+    "options": [
+      "Открытие двери",
+      "Кража еды со стола",
+      "Использование Игни",
+      "Приближение единорога"
+    ],
+    "answer": 1,
+    "why": "Можно пройти мимо, не трогая еду.",
+    "source": "https://www.gamebanshee.com/thewitcher3/walkthrough/beyondhillanddale.php"
+  }
+]

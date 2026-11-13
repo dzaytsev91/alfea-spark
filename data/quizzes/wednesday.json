@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Первый день",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Как зовут героиню детективных рукописей Уэнсдей?",
+    "options": [
+      "Вайпер де ла Муэрте",
+      "Доминика Фрумп",
+      "Гуди Найтшейд",
+      "Офелия Блэк"
+    ],
+    "answer": 0,
+    "why": "Имя звучит на сеансе у Кинботт.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=wednesday-2022"
+  },
+  {
+    "id": 2,
+    "tag": "Первый день",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Как зовут мать героини в рукописях Уэнсдей?",
+    "options": [
+      "Габриэль",
+      "Доминика",
+      "Франсуаза",
+      "Ларисса"
+    ],
+    "answer": 1,
+    "why": "Кинботт обсуждает отношения Вайпер и Доминики.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=wednesday-2022"
+  },
+  {
+    "id": 3,
+    "tag": "Первый день",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какой размер шестигранника Уэнсдей просит для ремонта кофемашины?",
+    "options": [
+      "5 мм",
+      "6 мм",
+      "4 мм",
+      "3 мм"
+    ],
+    "answer": 2,
+    "why": "Ещё нужна отвёртка tri-wing.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=wednesday-2022"
+  },
+  {
+    "id": 4,
+    "tag": "Первый день",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какое её изобретение помогло разобраться в паровом клапане кофемашины?",
+    "options": [
+      "Паровой крематорий",
+      "Механическая дыба",
+      "Электрическая пила",
+      "Паровая гильотина"
+    ],
+    "answer": 3,
+    "why": "Она построила гильотину в десять лет.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=wednesday-2022"
+  },
+  {
+    "id": 5,
+    "tag": "Первый день",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Куда Тайлер предлагает отвезти Уэнсдей для поездки на поезде?",
+    "options": [
+      "Берлингтон",
+      "Бостон",
+      "Беннингтон",
+      "Нью-Хейвен"
+    ],
+    "answer": 0,
+    "why": "Ближайшая станция — в получасе езды.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e01&tv-show=wednesday-2022"
+  },
+  {
+    "id": 6,
+    "tag": "Кубок По",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "В каком году состоялся первый Кубок По?",
+    "options": [
+      "1907",
+      "1897",
+      "1797",
+      "1879"
+    ],
+    "answer": 1,
+    "why": "Уимс называет дату на награждении.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=wednesday-2022"
+  },
+  {
+    "id": 7,
+    "tag": "Кубок По",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Что вывело Йоко из состава перед гонкой?",
+    "options": [
+      "Пыльца волчьего аконита",
+      "Солнечный ожог",
+      "Чесночный хлеб",
+      "Серебряная пыль"
+    ],
+    "answer": 2,
+    "why": "Энид рассказывает об аллергической реакции.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=wednesday-2022"
+  },
+  {
+    "id": 8,
+    "tag": "Кубок По",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какие две команды остаются в финальной части гонки?",
+    "options": [
+      "Золотые жуки и Амонтильядо",
+      "Чёрные кошки и Маятник",
+      "Амонтильядо и Маятник",
+      "Золотые жуки и Чёрные кошки"
+    ],
+    "answer": 3,
+    "why": "Их называют перед финишем.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=wednesday-2022"
+  },
+  {
+    "id": 9,
+    "tag": "Кубок По",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Кто была напарницей Мортиши при прежней победе общежития?",
+    "options": [
+      "Ларисса Уимс",
+      "Мэрилин Торнхилл",
+      "Габриэль Барклай",
+      "Франсуаза Галпин"
+    ],
+    "answer": 0,
+    "why": "Уимс сама рассказывает об этом.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=wednesday-2022"
+  },
+  {
+    "id": 10,
+    "tag": "Тайная библиотека",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какое действие открывает проход у статуи По?",
+    "options": [
+      "Один хлопок",
+      "Два щелчка пальцами",
+      "Три стука по книге",
+      "Поворот бюста"
+    ],
+    "answer": 1,
+    "why": "Разгадка отсылает к теме семейки Аддамс.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=wednesday-2022"
+  },
+  {
+    "id": 11,
+    "tag": "День помощи",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Куда Уэнсдей изначально распределили на общественные работы?",
+    "options": [
+      "Weathervane",
+      "Городскую библиотеку",
+      "Uriah’s Heap",
+      "Pilgrim World"
+    ],
+    "answer": 2,
+    "why": "Она меняет назначение с Энид.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=wednesday-2022"
+  },
+  {
+    "id": 12,
+    "tag": "День помощи",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какой напиток Йоко особенно хвалят в клубе «Паслён»?",
+    "options": [
+      "Кровавую Мэри",
+      "Тыквенный пунш",
+      "Вишнёвый лимонад",
+      "Безалкогольный мохито"
+    ],
+    "answer": 3,
+    "why": "В начале серии её называют миксологом.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=wednesday-2022"
+  },
+  {
+    "id": 13,
+    "tag": "День помощи",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Сколько лет назад тайное общество лишилось официального разрешения?",
+    "options": [
+      "30",
+      "20",
+      "25",
+      "40"
+    ],
+    "answer": 0,
+    "why": "Причиной стала смерть обычного школьника.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=wednesday-2022"
+  },
+  {
+    "id": 14,
+    "tag": "День помощи",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какое произведение Уэнсдей играет во время разрушения памятника?",
+    "options": [
+      "Реквием Моцарта",
+      "«Зима» Вивальди",
+      "«Лето» Вивальди",
+      "«Пляска смерти» Сен-Санса"
+    ],
+    "answer": 1,
+    "why": "Музыка сопровождает хаос на площади.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=wednesday-2022"
+  },
+  {
+    "id": 15,
+    "tag": "День помощи",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какой ансамбльский номер звучит перед сменой музыки на виолончель?",
+    "options": [
+      "Goo Goo Muck — The Cramps",
+      "Friday I’m in Love — The Cure",
+      "Don’t Stop — Fleetwood Mac",
+      "Paint It Black — Rolling Stones"
+    ],
+    "answer": 2,
+    "why": "Школьный ансамбль играет бодрую аранжировку.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=wednesday-2022"
+  },
+  {
+    "id": 16,
+    "tag": "Семейное прошлое",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Сколько лет прошло с ночи смерти Гаррета, согласно началу пятой серии?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "32"
+    ],
+    "answer": 3,
+    "why": "Уэнсдей задаётся этим вопросом за кадром.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=wednesday-2022"
+  },
+  {
+    "id": 17,
+    "tag": "Семейное прошлое",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Кто задумал отравление школьного пунша?",
+    "options": [
+      "Ансел Гейтс",
+      "Мэр Уокер",
+      "Гомес Аддамс",
+      "Шериф Галпин"
+    ],
+    "answer": 0,
+    "why": "Отец Гаррета хотел уничтожить учеников.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=wednesday-2022"
+  },
+  {
+    "id": 18,
+    "tag": "Семейное прошлое",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какой признак останков подтверждает отравление паслёном?",
+    "options": [
+      "Белые волосы",
+      "Синеватый оттенок тканей",
+      "Чёрные кости",
+      "Красные зубы"
+    ],
+    "answer": 1,
+    "why": "Уэнсдей замечает характерный оттенок.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=wednesday-2022"
+  },
+  {
+    "id": 19,
+    "tag": "Семейное прошлое",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какой тип провидицы Мортиша связывает со своим характером?",
+    "options": [
+      "Сова",
+      "Лебедь",
+      "Голубка",
+      "Ворон"
+    ],
+    "answer": 2,
+    "why": "Её видения обычно положительные.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=wednesday-2022"
+  },
+  {
+    "id": 20,
+    "tag": "Семейное прошлое",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Кого Уимс изображала на школьном конкурсе талантов?",
+    "options": [
+      "Грету Гарбо",
+      "Марлен Дитрих",
+      "Одри Хепбёрн",
+      "Джуди Гарленд"
+    ],
+    "answer": 3,
+    "why": "Альбом помогает понять её способность менять облик.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e05&tv-show=wednesday-2022"
+  },
+  {
+    "id": 21,
+    "tag": "Записи о монстре",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Чей дневник Фестер советует искать ради сведений о хайдах?",
+    "options": [
+      "Натаниэля Фолкнера",
+      "Джозефа Крэкстоуна",
+      "Эдгара По",
+      "Ансела Гейтса"
+    ],
+    "answer": 0,
+    "why": "Фолкнер изучал изгоев до основания школы.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e07&tv-show=wednesday-2022"
+  },
+  {
+    "id": 22,
+    "tag": "Записи о монстре",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "В каком городе Фестер встречал хайда в лечебнице?",
+    "options": [
+      "Женева",
+      "Цюрих",
+      "Вена",
+      "Прага"
+    ],
+    "answer": 1,
+    "why": "Он вспоминает поездку 1983 года.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e07&tv-show=wednesday-2022"
+  },
+  {
+    "id": 23,
+    "tag": "Записи о монстре",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Как звали знакомую Фестера, превратившуюся в хайда?",
+    "options": [
+      "Ларисса Уимс",
+      "Валери Кинботт",
+      "Ольга Малакова",
+      "Франсуаза Галпин"
+    ],
+    "answer": 2,
+    "why": "Фестер вспоминает пианистку Ольгу.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e07&tv-show=wednesday-2022"
+  },
+  {
+    "id": 24,
+    "tag": "Записи о монстре",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Во время исполнения чьей сонаты превратилась пианистка из рассказа Фестера?",
+    "options": [
+      "Бетховена",
+      "Листа",
+      "Шуберта",
+      "Шопена"
+    ],
+    "answer": 3,
+    "why": "Рассказ включает и жертв среди критиков.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e07&tv-show=wednesday-2022"
+  },
+  {
+    "id": 25,
+    "tag": "Записи о монстре",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Где Уэнсдей прячет Фестера после его появления?",
+    "options": [
+      "В убежище пчеловодов Юджина",
+      "В тайной библиотеке",
+      "В склепе Крэкстоуна",
+      "В мастерской Ксавье"
+    ],
+    "answer": 0,
+    "why": "Фестер пытается перекусить пчёлами.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e07&tv-show=wednesday-2022"
+  },
+  {
+    "id": 26,
+    "tag": "Финал",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Как зовут мать Тайлера, чьё фото помогает подтвердить наследование хайда?",
+    "options": [
+      "Валери",
+      "Франсуаза",
+      "Габриэль",
+      "Доминика"
+    ],
+    "answer": 1,
+    "why": "Она училась одновременно с Мортишей.",
+    "source": "https://www.netflix.com/tudum/wednesday-episode-8-finale-ending-explained"
+  },
+  {
+    "id": 27,
+    "tag": "Финал",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какое состояние впервые пробудило хайда у матери Тайлера?",
+    "options": [
+      "Приступ лунатизма",
+      "Отравление аконитом",
+      "Послеродовая депрессия",
+      "Амнезия после аварии"
+    ],
+    "answer": 2,
+    "why": "Это объясняет Уэнсдей в финале.",
+    "source": "https://www.netflix.com/tudum/wednesday-episode-8-finale-ending-explained"
+  },
+  {
+    "id": 28,
+    "tag": "Финал",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Какая деталь, увиденная Юджином, выдаёт сообщницу хайда?",
+    "options": [
+      "Серебряная брошь",
+      "Фиолетовые перчатки",
+      "Белый шарф",
+      "Красные сапоги"
+    ],
+    "answer": 3,
+    "why": "Эту обувь носит Торнхилл.",
+    "source": "https://www.netflix.com/tudum/wednesday-episode-8-finale-ending-explained"
+  },
+  {
+    "id": 29,
+    "tag": "Финал",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Чей облик принимает Уимс, чтобы услышать признание Торнхилл?",
+    "options": [
+      "Тайлера",
+      "Ксавье",
+      "Юджина",
+      "Шерифа"
+    ],
+    "answer": 0,
+    "why": "Так директор становится свидетелем признания.",
+    "source": "https://www.netflix.com/tudum/wednesday-episode-8-finale-ending-explained"
+  },
+  {
+    "id": 30,
+    "tag": "Финал",
+    "icon": "🕷️",
+    "points": 3,
+    "q": "Почему для открытия саркофага нужна именно кровь Уэнсдей?",
+    "options": [
+      "Так требует дневник Фолкнера",
+      "Гуди запечатала его кровным замком",
+      "Она последняя ученица Невермора",
+      "Только кровь ворона ядовита"
+    ],
+    "answer": 1,
+    "why": "Нужна кровь потомка Гуди Аддамс.",
+    "source": "https://www.netflix.com/tudum/wednesday-episode-8-finale-ending-explained"
+  }
+]

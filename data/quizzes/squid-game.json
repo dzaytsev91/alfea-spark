@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Стеклянный мост",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько минут отводят на стеклянный мост?",
+    "options": [
+      "16",
+      "15",
+      "18",
+      "20"
+    ],
+    "answer": 0,
+    "why": "Таймер запускается на шестнадцати минутах.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-games-explained"
+  },
+  {
+    "id": 2,
+    "tag": "Стеклянный мост",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько пар стеклянных панелей нужно пройти?",
+    "options": [
+      "24",
+      "18",
+      "16",
+      "20"
+    ],
+    "answer": 1,
+    "why": "На каждом шаге выбирают одну из двух.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-games-explained"
+  },
+  {
+    "id": 3,
+    "tag": "Стеклянный мост",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Вес скольких человек выдерживает безопасная панель по объявленным правилам?",
+    "options": [
+      "Трёх",
+      "Четырёх",
+      "Двух",
+      "Одного"
+    ],
+    "answer": 2,
+    "why": "Закалённое стекло выдерживает двоих.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-games-explained"
+  },
+  {
+    "id": 4,
+    "tag": "Стеклянный мост",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Почему ведущий выключает свет ближе к концу моста?",
+    "options": [
+      "Истекло время игры",
+      "VIP попросили тёмную сцену",
+      "Сработала пожарная защита",
+      "Игрок различает виды стекла"
+    ],
+    "answer": 3,
+    "why": "Освещение давало стекольщику преимущество.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-games-explained"
+  },
+  {
+    "id": 5,
+    "tag": "Стеклянный мост",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какова вероятность угадать все 18 развилок без подсказок и чужих попыток?",
+    "options": [
+      "1 к 262144",
+      "1 к 65536",
+      "1 к 131072",
+      "1 к 524288"
+    ],
+    "answer": 0,
+    "why": "Это 1/2 в восемнадцатой степени.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-games-explained"
+  },
+  {
+    "id": 6,
+    "tag": "Возвращение",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какой пункт соглашения позволяет прекратить игры голосованием?",
+    "options": [
+      "Четвёртый",
+      "Третий",
+      "Первый",
+      "Второй"
+    ],
+    "answer": 1,
+    "why": "Требуется большинство участников.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=squid-game"
+  },
+  {
+    "id": 7,
+    "tag": "Возвращение",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какой итог у первого голосования о прекращении игр?",
+    "options": [
+      "102 против 99 за прекращение",
+      "Единогласное прекращение",
+      "101 против 100 за прекращение",
+      "100 против 101 за прекращение"
+    ],
+    "answer": 2,
+    "why": "Последний голос разрушает равенство.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=squid-game"
+  },
+  {
+    "id": 8,
+    "tag": "Возвращение",
+    "icon": "🔺",
+    "points": 3,
+    "q": "В каком порядке вызывают игроков на первое голосование?",
+    "options": [
+      "По возрастанию номера",
+      "По возрасту",
+      "По порядку финиша",
+      "По убыванию номера"
+    ],
+    "answer": 3,
+    "why": "Последним голосует номер 001.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=squid-game"
+  },
+  {
+    "id": 9,
+    "tag": "Возвращение",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какая болезнь матери заставляет Ки-хуна искать деньги на лечение?",
+    "options": [
+      "Диабет",
+      "Болезнь Паркинсона",
+      "Туберкулёз",
+      "Почечная недостаточность"
+    ],
+    "answer": 0,
+    "why": "Врачи говорят о тяжёлых осложнениях диабета.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=squid-game"
+  },
+  {
+    "id": 10,
+    "tag": "Возвращение",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Как зовут младшего брата Сэ-бёк?",
+    "options": [
+      "Ён-сик",
+      "Чхоль",
+      "Чжун-хо",
+      "Сан-хун"
+    ],
+    "answer": 1,
+    "why": "Она хочет забрать его из приюта.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e02&tv-show=squid-game"
+  },
+  {
+    "id": 11,
+    "tag": "Дальгона",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какой номер у врача, вовлечённого в торговлю органами?",
+    "options": [
+      "119",
+      "112",
+      "111",
+      "101"
+    ],
+    "answer": 2,
+    "why": "Его преимущества вызывают конфликт охраны.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=squid-game"
+  },
+  {
+    "id": 12,
+    "tag": "Дальгона",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какую фигуру выбирает Сан-у?",
+    "options": [
+      "Круг",
+      "Звезду",
+      "Зонт",
+      "Треугольник"
+    ],
+    "answer": 3,
+    "why": "Он догадывается об испытании заранее.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=squid-game"
+  },
+  {
+    "id": 13,
+    "tag": "Дальгона",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Что Ми-нё тайком использует для иглы?",
+    "options": [
+      "Зажигалку",
+      "Напильник",
+      "Спирт",
+      "Свечу"
+    ],
+    "answer": 0,
+    "why": "Нагретая игла легче прорезает сахар.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=squid-game"
+  },
+  {
+    "id": 14,
+    "tag": "Дальгона",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Какой знак носят старшие надзиратели?",
+    "options": [
+      "Ромб",
+      "Квадрат",
+      "Треугольник",
+      "Круг"
+    ],
+    "answer": 1,
+    "why": "Круги — рабочие, треугольники — вооружённая охрана.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=squid-game"
+  },
+  {
+    "id": 15,
+    "tag": "Дальгона",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Что замечает Ки-хун перед тем, как начать лизать сахарную фигуру?",
+    "options": [
+      "Зонт легче сломать пополам",
+      "Охранник нагревает банку",
+      "Сахар тает от пота",
+      "Игла оставляет синий след"
+    ],
+    "answer": 2,
+    "why": "Влага подсказывает способ растворить тонкий слой.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e03&tv-show=squid-game"
+  },
+  {
+    "id": 16,
+    "tag": "Перетягивание",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько секунд Иль-нам предлагает сначала держаться, отклонившись назад?",
+    "options": [
+      "5",
+      "15",
+      "20",
+      "10"
+    ],
+    "answer": 3,
+    "why": "Это первая часть его стратегии.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=squid-game"
+  },
+  {
+    "id": 17,
+    "tag": "Перетягивание",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько шагов вперёд предлагает Сан-у в критический момент?",
+    "options": [
+      "Три",
+      "Два",
+      "Четыре",
+      "Пять"
+    ],
+    "answer": 0,
+    "why": "Соперники теряют равновесие из-за ослабления натяжения.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=squid-game"
+  },
+  {
+    "id": 18,
+    "tag": "Перетягивание",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Как распределяются участники относительно каната по совету старика?",
+    "options": [
+      "По возрасту от центра",
+      "Поочерёдно с разных сторон",
+      "Все с одной стороны",
+      "Сильные слева, слабые справа"
+    ],
+    "answer": 1,
+    "why": "Чередование помогает опереться ногами.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=squid-game"
+  },
+  {
+    "id": 19,
+    "tag": "Перетягивание",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Кто стоит последним, как «якорь», в команде Ки-хуна на перетягивании?",
+    "options": [
+      "Иль-нам",
+      "Сан-у",
+      "Ток-су",
+      "Али"
+    ],
+    "answer": 3,
+    "why": "Али занимает заднюю позицию команды.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=squid-game"
+  },
+  {
+    "id": 20,
+    "tag": "Перетягивание",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Как старик советует держать канат?",
+    "options": [
+      "Над плечом",
+      "На уровне колен",
+      "Обернув вокруг шеи",
+      "Под мышкой"
+    ],
+    "answer": 3,
+    "why": "Это помогает передавать усилие всем телом.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e04&tv-show=squid-game"
+  },
+  {
+    "id": 21,
+    "tag": "Шарики",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько шариков получает каждый игрок перед четвёртым испытанием?",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "15"
+    ],
+    "answer": 0,
+    "why": "Нужно забрать десять шариков партнёра.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=squid-game"
+  },
+  {
+    "id": 22,
+    "tag": "Шарики",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Сколько времени отведено на игру с шариками?",
+    "options": [
+      "40 минут",
+      "30 минут",
+      "20 минут",
+      "15 минут"
+    ],
+    "answer": 1,
+    "why": "Конкретный способ игры выбирают участники.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=squid-game"
+  },
+  {
+    "id": 23,
+    "tag": "Шарики",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Чем Сан-у подменяет содержимое мешочка Али?",
+    "options": [
+      "Песком",
+      "Пуговицами",
+      "Камешками",
+      "Монетами"
+    ],
+    "answer": 2,
+    "why": "Али замечает обман слишком поздно.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=squid-game"
+  },
+  {
+    "id": 24,
+    "tag": "Шарики",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Как Чи-ён предлагает определить победителя одним броском?",
+    "options": [
+      "Попасть в жестяную банку",
+      "Сбить шарик на земле",
+      "Перебросить через крышу",
+      "Бросить ближе к стене"
+    ],
+    "answer": 3,
+    "why": "Она затем намеренно отдаёт победу Сэ-бёк.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=squid-game"
+  },
+  {
+    "id": 25,
+    "tag": "Шарики",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Что происходит с Ми-нё, оставшейся без пары?",
+    "options": [
+      "Она проходит без игры",
+      "Её исключают",
+      "Она становится запасной",
+      "Ей дают другого одиночку"
+    ],
+    "answer": 0,
+    "why": "Она возвращается в спальню раньше остальных.",
+    "source": "https://www.springfieldspringfield.co.uk/view_episode_scripts.php?episode=s01e06&tv-show=squid-game"
+  },
+  {
+    "id": 26,
+    "tag": "Детали финала",
+    "icon": "🔺",
+    "points": 3,
+    "q": "В каком году Ин-хо победил в играх до событий первого сезона?",
+    "options": [
+      "2017",
+      "2015",
+      "2014",
+      "2016"
+    ],
+    "answer": 1,
+    "why": "Чжун-хо находит запись среди победителей.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer"
+  },
+  {
+    "id": 27,
+    "tag": "Детали финала",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Каков номер первого погибшего игрока в «Тише едешь — дальше будешь»?",
+    "options": [
+      "306",
+      "322",
+      "324",
+      "250"
+    ],
+    "answer": 2,
+    "why": "Номер 250 погибает следом за ним.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer"
+  },
+  {
+    "id": 28,
+    "tag": "Детали финала",
+    "icon": "🔺",
+    "points": 3,
+    "q": "На сколько вон растёт приз за одного выбывшего?",
+    "options": [
+      "10 миллионов",
+      "1 миллиард",
+      "50 миллионов",
+      "100 миллионов"
+    ],
+    "answer": 3,
+    "why": "Общий фонд достигает 45,6 миллиарда.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer"
+  },
+  {
+    "id": 29,
+    "tag": "Детали финала",
+    "icon": "🔺",
+    "points": 3,
+    "q": "Как называется магазин приятеля Ки-хуна?",
+    "options": [
+      "Lucky Corner",
+      "Lucky Mart",
+      "Happy Corner",
+      "Green Market"
+    ],
+    "answer": 0,
+    "why": "Друг скрывает их азартные игры от жены.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer"
+  },
+  {
+    "id": 30,
+    "tag": "Детали финала",
+    "icon": "🔺",
+    "points": 3,
+    "q": "До какого времени действует последняя ставка Иль-нама о помощи бездомному?",
+    "options": [
+      "До одиннадцати",
+      "До полуночи",
+      "До часа ночи",
+      "До рассвета"
+    ],
+    "answer": 1,
+    "why": "Помощь приходит к истечению срока.",
+    "source": "https://www.netflix.com/tudum/articles/squid-game-season-1-ending-explainer"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Незабываемая ночка",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Как зовут козу, проданную великану после попойки с Сэмом?",
+    "options": [
+      "Гледа",
+      "Хильда",
+      "Грета",
+      "Сильда"
+    ],
+    "answer": 0,
+    "why": "Эннис требует вернуть Гледу.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/anighttoremember.php"
+  },
+  {
+    "id": 2,
+    "tag": "Незабываемая ночка",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Как зовут великана, купившего козу?",
+    "options": [
+      "Горбаш",
+      "Грок",
+      "Карстааг",
+      "Ямарз"
+    ],
+    "answer": 1,
+    "why": "Гледа находится у Грока.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/anighttoremember.php"
+  },
+  {
+    "id": 3,
+    "tag": "Незабываемая ночка",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Где находится портал к финальной встрече с Сэмом?",
+    "options": [
+      "Волскигге",
+      "Валтум",
+      "Морвунскар",
+      "Мзулфт"
+    ],
+    "answer": 2,
+    "why": "Портал ведёт из Морвунскара в Туманную рощу.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/anighttoremember.php"
+  },
+  {
+    "id": 4,
+    "tag": "Незабываемая ночка",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Кому нужно вернуть свадебное кольцо после пьяного приключения?",
+    "options": [
+      "Сенне",
+      "Муири",
+      "Фрике",
+      "Изольде"
+    ],
+    "answer": 3,
+    "why": "Кольцо было взято у Изольды.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/anighttoremember.php"
+  },
+  {
+    "id": 5,
+    "tag": "Незабываемая ночка",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какому божеству посвящён храм, в котором герой просыпается после попойки?",
+    "options": [
+      "Дибелле",
+      "Кинарет",
+      "Мара",
+      "Аркею"
+    ],
+    "answer": 0,
+    "why": "Сенна заставляет убрать храм Дибеллы.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/anighttoremember.php"
+  },
+  {
+    "id": 6,
+    "tag": "За гранью обыденного",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Кровь какой расы НЕ входит в набор для Септимия?",
+    "options": [
+      "Босмеров",
+      "Бретонцев",
+      "Орков",
+      "Фалмеров"
+    ],
+    "answer": 1,
+    "why": "Нужна кровь пяти эльфийских рас.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/discerningthetransmundane.php"
+  },
+  {
+    "id": 7,
+    "tag": "За гранью обыденного",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Что Септимий ошибочно считает содержимым двемерского куба?",
+    "options": [
+      "Камень Барензии",
+      "Сердце Азуры",
+      "Сердце Лорхана",
+      "Око Магнуса"
+    ],
+    "answer": 2,
+    "why": "Внутри на самом деле книга.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/discerningthetransmundane.php"
+  },
+  {
+    "id": 8,
+    "tag": "За гранью обыденного",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какую книгу находят в открытом кубе Септимия?",
+    "options": [
+      "Мистериум Заркса",
+      "Этериумные войны",
+      "Вечный покой",
+      "Огма Инфиниум"
+    ],
+    "answer": 3,
+    "why": "Это артефакт Хермеуса Моры.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/discerningthetransmundane.php"
+  },
+  {
+    "id": 9,
+    "tag": "За гранью обыденного",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Где заполняют двемерский словарь для Септимия?",
+    "options": [
+      "В башне Мзарк",
+      "В Нчардаке",
+      "В Бталфте",
+      "В башне Аркнтамз"
+    ],
+    "answer": 0,
+    "why": "Механизм находится над Чёрным Пределом.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/discerningthetransmundane.php"
+  },
+  {
+    "id": 10,
+    "tag": "За гранью обыденного",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Что происходит с Септимием после открытия куба?",
+    "options": [
+      "Он попадает в Совнгард",
+      "Он превращается в пепел",
+      "Он становится искателем",
+      "Он теряет зрение"
+    ],
+    "answer": 1,
+    "why": "Мора избавляется от слуги.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/discerningthetransmundane.php"
+  },
+  {
+    "id": 11,
+    "tag": "Единственное лекарство",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой камень нужен Кешу для благовония?",
+    "options": [
+      "Обычный рубин",
+      "Безупречный аметист",
+      "Безупречный рубин",
+      "Безупречный сапфир"
+    ],
+    "answer": 2,
+    "why": "Обычный рубин не подходит.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/theonlycure.php"
+  },
+  {
+    "id": 12,
+    "tag": "Единственное лекарство",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой металл входит в подношение Кешу?",
+    "options": [
+      "Золото",
+      "Ртуть",
+      "Орихалк",
+      "Серебро"
+    ],
+    "answer": 3,
+    "why": "Нужен серебряный слиток.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/theonlycure.php"
+  },
+  {
+    "id": 13,
+    "tag": "Единственное лекарство",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Кого Периайт приказывает убить?",
+    "options": [
+      "Оркендора",
+      "Малкорана",
+      "Силуса",
+      "Логрольфа"
+    ],
+    "answer": 0,
+    "why": "Оркендор предал своего покровителя.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/theonlycure.php"
+  },
+  {
+    "id": 14,
+    "tag": "Единственное лекарство",
+    "icon": "🐉",
+    "points": 3,
+    "q": "В каких двемерских руинах находится цель Периайта?",
+    "options": [
+      "Ральдбтхар",
+      "Бтардамз",
+      "Мзулфт",
+      "Альфтанд"
+    ],
+    "answer": 1,
+    "why": "Оркендор скрывается в Бтардамзе.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/theonlycure.php"
+  },
+  {
+    "id": 15,
+    "tag": "Единственное лекарство",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой ингредиент нужен вместе с рубином, серебром и прахом вампира?",
+    "options": [
+      "Морозная мириам",
+      "Собачий корень",
+      "Ядовитый колокольчик",
+      "Паслён"
+    ],
+    "answer": 2,
+    "why": "Кеш готовит благовоние из четырёх компонентов.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/theonlycure.php"
+  },
+  {
+    "id": 16,
+    "tag": "Затерявшееся в веках",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Как зовут призрак исследовательницы этерия?",
+    "options": [
+      "Серана",
+      "Сильвия",
+      "Фьола",
+      "Катрия"
+    ],
+    "answer": 3,
+    "why": "Она встречает героя в Аркнтамзе.",
+    "source": "https://primagames.com/eguides/elder-scrolls-v-skyrim-special-edition-eguide/Quests/side-quests/lost-to-the-ages"
+  },
+  {
+    "id": 17,
+    "tag": "Затерявшееся в веках",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Как называется лук Катрии?",
+    "options": [
+      "Зефир",
+      "Ауриэль",
+      "Фиринел",
+      "Дравин"
+    ],
+    "answer": 0,
+    "why": "Он лежит на поваленном дереве.",
+    "source": "https://primagames.com/eguides/elder-scrolls-v-skyrim-special-edition-eguide/Quests/side-quests/lost-to-the-ages"
+  },
+  {
+    "id": 18,
+    "tag": "Затерявшееся в веках",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Сколько осколков нужно для этериевой эмблемы?",
+    "options": [
+      "Шесть",
+      "Четыре",
+      "Три",
+      "Пять"
+    ],
+    "answer": 1,
+    "why": "Все четыре фрагмента образуют эмблему.",
+    "source": "https://primagames.com/eguides/elder-scrolls-v-skyrim-special-edition-eguide/Quests/side-quests/lost-to-the-ages"
+  },
+  {
+    "id": 19,
+    "tag": "Затерявшееся в веках",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Где находится вход в кузницу этерия?",
+    "options": [
+      "Склад Мзулфта",
+      "Аркнтамз",
+      "Руины Бталфта",
+      "Глубинный народный переход"
+    ],
+    "answer": 2,
+    "why": "Эмблема открывает путь под Бталфт.",
+    "source": "https://primagames.com/eguides/elder-scrolls-v-skyrim-special-edition-eguide/Quests/side-quests/lost-to-the-ages"
+  },
+  {
+    "id": 20,
+    "tag": "Затерявшееся в веках",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой из этих предметов НЕ создают в кузнице этерия?",
+    "options": [
+      "Этериевую корону",
+      "Этериевый щит",
+      "Этериевый посох",
+      "Этериевый меч"
+    ],
+    "answer": 3,
+    "why": "В оригинальном дополнении доступны только три артефакта.",
+    "source": "https://primagames.com/eguides/elder-scrolls-v-skyrim-special-edition-eguide/Quests/side-quests/lost-to-the-ages"
+  },
+  {
+    "id": 21,
+    "tag": "Запретная легенда",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Кто оставил записи и костяной драконий коготь в Фолгунтуре?",
+    "options": [
+      "Дайнас Вален",
+      "Септимий Сегоний",
+      "Кальсельмо",
+      "Ураг гро-Шуб"
+    ],
+    "answer": 0,
+    "why": "Записи Валена объясняют легенду.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/forbiddenlegend.php"
+  },
+  {
+    "id": 22,
+    "tag": "Запретная легенда",
+    "icon": "🐉",
+    "points": 3,
+    "q": "В каких руинах лежит фрагмент Йурика Голдурсона?",
+    "options": [
+      "Лабиринтиан",
+      "Саартал",
+      "Фолгунтур",
+      "Зал Гейрмунда"
+    ],
+    "answer": 1,
+    "why": "Туда приводит и линия Коллегии.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/forbiddenlegend.php"
+  },
+  {
+    "id": 23,
+    "tag": "Запретная легенда",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой коготь нужен у первой двери Озёрного утёса?",
+    "options": [
+      "Эбонитовый",
+      "Сапфировый",
+      "Изумрудный",
+      "Костяной"
+    ],
+    "answer": 2,
+    "why": "Следующая дверь использует костяной коготь.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/forbiddenlegend.php"
+  },
+  {
+    "id": 24,
+    "tag": "Запретная легенда",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какова комбинация изумрудного когтя сверху вниз?",
+    "options": [
+      "Змея — кит — медведь",
+      "Медведь — сова — мотылёк",
+      "Кит — змея — орёл",
+      "Медведь — кит — змея"
+    ],
+    "answer": 3,
+    "why": "Подсказка изображена на самом когте.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/forbiddenlegend.php"
+  },
+  {
+    "id": 25,
+    "tag": "Запретная легенда",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Где перековывают амулет Голдура?",
+    "options": [
+      "Озёрный утёс",
+      "Небесная кузница",
+      "Кузница Атронахов",
+      "Кузница этерия"
+    ],
+    "answer": 0,
+    "why": "Там вновь сражаются с тремя братьями.",
+    "source": "https://www.gamebanshee.com/skyrim/walkthrough/forbiddenlegend.php"
+  },
+  {
+    "id": 26,
+    "tag": "Чёрные книги",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какая книга позволяет перераспределять способности после победы над Мираком?",
+    "options": [
+      "Нерассказанные легенды",
+      "Пробуждающие сны",
+      "Острое перо",
+      "Болезненный регент"
+    ],
+    "answer": 1,
+    "why": "Сброс ветки стоит душу дракона.",
+    "source": "https://elderscrolls.fandom.com/wiki/Black_Books"
+  },
+  {
+    "id": 27,
+    "tag": "Чёрные книги",
+    "icon": "🐉",
+    "points": 3,
+    "q": "В каких руинах находят книгу «Острое перо» (Epistolary Acumen)?",
+    "options": [
+      "Бенконгерик",
+      "Курган Колбьорн",
+      "Нчардак",
+      "Белый хребет"
+    ],
+    "answer": 2,
+    "why": "В Нчардак герой идёт с Нелотом.",
+    "source": "https://elderscrolls.fandom.com/wiki/Black_Books"
+  },
+  {
+    "id": 28,
+    "tag": "Чёрные книги",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какая книга даёт выбор между тремя «Искателями»?",
+    "options": [
+      "Пробуждающие сны",
+      "Нити и филигрань",
+      "Скрытый сумрак",
+      "Болезненный регент"
+    ],
+    "answer": 3,
+    "why": "Её награды связаны с тремя группами навыков.",
+    "source": "https://elderscrolls.fandom.com/wiki/Black_Books"
+  },
+  {
+    "id": 29,
+    "tag": "Чёрные книги",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какой «Искатель» усиливает алхимию?",
+    "options": [
+      "Искатель теней",
+      "Искатель силы",
+      "Искатель волшебства",
+      "Искатель знаний"
+    ],
+    "answer": 0,
+    "why": "Алхимия относится к скрытным навыкам.",
+    "source": "https://elderscrolls.fandom.com/wiki/Black_Books"
+  },
+  {
+    "id": 30,
+    "tag": "Чёрные книги",
+    "icon": "🐉",
+    "points": 3,
+    "q": "Какая награда Epistolary Acumen может обращать врагов в пепел полным криком «Безжалостная сила»?",
+    "options": [
+      "Секрет силы",
+      "Сила Драконорождённого",
+      "Пламя Драконорождённого",
+      "Мороз Драконорождённого"
+    ],
+    "answer": 1,
+    "why": "Нужны все три слова крика.",
+    "source": "https://elderscrolls.fandom.com/wiki/Black_Books"
+  }
+]

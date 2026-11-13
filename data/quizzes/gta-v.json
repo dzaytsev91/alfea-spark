@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Задания Лестера",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какая компания выигрывает от The Hotel Assassination до последующего отскока конкурента?",
+    "options": [
+      "Betta Pharmaceuticals",
+      "Bilkinton Research",
+      "Fruit",
+      "GoldCoast"
+    ],
+    "answer": 0,
+    "why": "Лестер рассчитывает на рост конкурента Bilkinton.",
+    "source": "https://gta.fandom.com/wiki/Lester%27s_Assassinations"
+  },
+  {
+    "id": 2,
+    "tag": "Задания Лестера",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какие акции покупают перед The Multi Target Assassination?",
+    "options": [
+      "Tinkle",
+      "Debonaire",
+      "Redwood",
+      "Vapid"
+    ],
+    "answer": 1,
+    "why": "Redwood рассматривают уже после падения.",
+    "source": "https://gta.fandom.com/wiki/Lester%27s_Assassinations"
+  },
+  {
+    "id": 3,
+    "tag": "Задания Лестера",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Акции какой компании покупают после The Bus Assassination, а не до неё?",
+    "options": [
+      "Debonaire",
+      "GoldCoast",
+      "Vapid",
+      "Fruit"
+    ],
+    "answer": 2,
+    "why": "Сначала удар снижает стоимость Vapid.",
+    "source": "https://gta.fandom.com/wiki/Lester%27s_Assassinations"
+  },
+  {
+    "id": 4,
+    "tag": "Задания Лестера",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какую компанию Лестер помогает поднять в The Vice Assassination?",
+    "options": [
+      "Facade",
+      "Lifeinvader",
+      "FlyUS",
+      "Fruit"
+    ],
+    "answer": 3,
+    "why": "Цель связана с конкурирующей Facade.",
+    "source": "https://gta.fandom.com/wiki/Lester%27s_Assassinations"
+  },
+  {
+    "id": 5,
+    "tag": "Задания Лестера",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какую компанию связывают с The Construction Assassination?",
+    "options": [
+      "GoldCoast",
+      "Bilkinton",
+      "AirEmu",
+      "Merryweather"
+    ],
+    "answer": 0,
+    "why": "Устранение конкурента выгодно GoldCoast.",
+    "source": "https://gta.fandom.com/wiki/Lester%27s_Assassinations"
+  },
+  {
+    "id": 6,
+    "tag": "Эпсилон",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Сколько миль Майкл должен пройти по пустыне в одеянии Эпсилона?",
+    "options": [
+      "10",
+      "5",
+      "3",
+      "7"
+    ],
+    "answer": 1,
+    "why": "Это условие Exercising the Truth.",
+    "source": "https://www.gamesradar.com/gta-5-kifflom-guide/"
+  },
+  {
+    "id": 7,
+    "tag": "Эпсилон",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какое первое денежное пожертвование просят после Seeking the Truth?",
+    "options": [
+      "5000 долларов",
+      "250 долларов",
+      "500 долларов",
+      "1000 долларов"
+    ],
+    "answer": 2,
+    "why": "Следующий этап требует большего взноса.",
+    "source": "https://www.gamesradar.com/gta-5-kifflom-guide/"
+  },
+  {
+    "id": 8,
+    "tag": "Эпсилон",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какой транспорт служит ориентиром первой встречи с Эпсилоном?",
+    "options": [
+      "Синий фургон",
+      "Белый лимузин",
+      "Чёрный внедорожник",
+      "Красный пикап"
+    ],
+    "answer": 3,
+    "why": "Встреча начинается у красного грузовичка.",
+    "source": "https://www.gamesradar.com/gta-5-kifflom-guide/"
+  },
+  {
+    "id": 9,
+    "tag": "Эпсилон",
+    "icon": "🚘",
+    "points": 3,
+    "q": "На вершине какого здания расположен предпоследний трактат Эпсилона?",
+    "options": [
+      "Maze Bank",
+      "FIB",
+      "IAA",
+      "Arcadius"
+    ],
+    "answer": 0,
+    "why": "Нужен подъём на самое высокое здание.",
+    "source": "https://www.gamesradar.com/gta-5-kifflom-guide/"
+  },
+  {
+    "id": 10,
+    "tag": "Эпсилон",
+    "icon": "🚘",
+    "points": 3,
+    "q": "За какого героя доступна полноценная цепочка «Истина»?",
+    "options": [
+      "Любого из троих",
+      "Майкла",
+      "Франклина",
+      "Тревора"
+    ],
+    "answer": 1,
+    "why": "Эпсилон обращается именно к Майклу.",
+    "source": "https://www.gamesradar.com/gta-5-kifflom-guide/"
+  },
+  {
+    "id": 11,
+    "tag": "Обрывки письма",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Кому адресовано восстановленное признание убийцы Леоноры?",
+    "options": [
+      "Девину Уэстону",
+      "Стиву Хейнсу",
+      "Дэвиду Ричардсу",
+      "Соломону Ричардсу"
+    ],
+    "answer": 2,
+    "why": "Речь идёт об отце Соломона.",
+    "source": "https://vandal.elespanol.com/en/grand-theft-auto-v/all-letter-scrap-locations-in-grand-theft-auto-5.html"
+  },
+  {
+    "id": 12,
+    "tag": "Обрывки письма",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Кто оказывается убийцей Леоноры Джонсон?",
+    "options": [
+      "Рокко Пелоси",
+      "Джош Бернстайн",
+      "Милтон Макилрой",
+      "Питер Дрейфус"
+    ],
+    "answer": 3,
+    "why": "Признание разоблачает режиссёра Дрейфуса.",
+    "source": "https://vandal.elespanol.com/en/grand-theft-auto-v/all-letter-scrap-locations-in-grand-theft-auto-5.html"
+  },
+  {
+    "id": 13,
+    "tag": "Обрывки письма",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Как называется задание, открываемое полным письмом?",
+    "options": [
+      "A Starlet in Vinewood",
+      "The Final Frontier",
+      "Vinewood Souvenirs",
+      "The Last One"
+    ],
+    "answer": 0,
+    "why": "Финальное столкновение доступно Франклину.",
+    "source": "https://vandal.elespanol.com/en/grand-theft-auto-v/all-letter-scrap-locations-in-grand-theft-auto-5.html"
+  },
+  {
+    "id": 14,
+    "tag": "Омега",
+    "icon": "🚘",
+    "points": 3,
+    "q": "После какой сюжетной миссии становится доступна Far Out?",
+    "options": [
+      "Crystal Maze",
+      "Fame or Shame",
+      "Friends Reunited",
+      "Minor Turbulence"
+    ],
+    "answer": 1,
+    "why": "Тогда можно начать сбор деталей.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/strangers/far-out"
+  },
+  {
+    "id": 15,
+    "tag": "Омега",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Что означает обращение Омеги CBL к Франклину?",
+    "options": [
+      "Central Bureau Liaison",
+      "Certified Beyond-Life",
+      "Carbon Based Lifeform",
+      "Cosmic Beacon Locator"
+    ],
+    "answer": 2,
+    "why": "Он называет героя углеродной формой жизни.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/strangers/far-out"
+  },
+  {
+    "id": 16,
+    "tag": "Ограбление в Палето",
+    "icon": "🚘",
+    "points": 3,
+    "q": "На чём Франклин вывозит команду из-под огня армии?",
+    "options": [
+      "Мусоровозе",
+      "Инкассаторском фургоне",
+      "Тягаче",
+      "Бульдозере"
+    ],
+    "answer": 3,
+    "why": "План с лодкой приходится отменить.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/the-paleto-score"
+  },
+  {
+    "id": 17,
+    "tag": "Ограбление в Палето",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Через фабрику какой сети проходит отступление?",
+    "options": [
+      "Cluckin’ Bell",
+      "Burger Shot",
+      "Up-n-Atom",
+      "Taco Bomb"
+    ],
+    "answer": 0,
+    "why": "Команда идёт через птицеперерабатывающую фабрику.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/the-paleto-score"
+  },
+  {
+    "id": 18,
+    "tag": "Ограбление в Палето",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Каков был первоначальный план эвакуации Франклина?",
+    "options": [
+      "Угнать армейский танк",
+      "Забрать команду на лодке",
+      "Увести команду на поезде",
+      "Посадить вертолёт на банк"
+    ],
+    "answer": 1,
+    "why": "Полиция перекрывает бухту.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/the-paleto-score"
+  },
+  {
+    "id": 19,
+    "tag": "Ограбление в Палето",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Какой транспорт в итоге увозит команду из Палето?",
+    "options": [
+      "Вертолёт Frogger",
+      "Автобус Dashound",
+      "Товарный поезд",
+      "Катер Predator"
+    ],
+    "answer": 2,
+    "why": "После фабрики герои запрыгивают в поезд.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/the-paleto-score"
+  },
+  {
+    "id": 20,
+    "tag": "Ограбление в Палето",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Что может произойти с неопытным стрелком при отступлении?",
+    "options": [
+      "Он улетит на вертолёте",
+      "Он сдастся армии",
+      "Он сбежит с деньгами",
+      "Его придавит полицейская машина"
+    ],
+    "answer": 3,
+    "why": "Его сумку можно подобрать.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/the-paleto-score"
+  },
+  {
+    "id": 21,
+    "tag": "Пролог",
+    "icon": "🚘",
+    "points": 3,
+    "q": "В каком году происходит ограбление в Людендорфе?",
+    "options": [
+      "2004",
+      "2003",
+      "2005",
+      "2006"
+    ],
+    "answer": 0,
+    "why": "Основная история начинается девять лет спустя.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/prologue"
+  },
+  {
+    "id": 22,
+    "tag": "Пролог",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Как называется охранная компания, чьё хранилище грабят в прологе?",
+    "options": [
+      "SecuroServ",
+      "Bobcat",
+      "Gruppe Sechs",
+      "Merryweather"
+    ],
+    "answer": 1,
+    "why": "Это хранилище Bobcat Security.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/prologue"
+  },
+  {
+    "id": 23,
+    "tag": "Пролог",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Кто стреляет в Майкла и Брэда в конце ограбления?",
+    "options": [
+      "Андреас Санчес",
+      "Карен Дэниелс",
+      "Дэйв Нортон",
+      "Стив Хейнс"
+    ],
+    "answer": 2,
+    "why": "Дэйв участвует в постановочной смерти Майкла.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/prologue"
+  },
+  {
+    "id": 24,
+    "tag": "Пролог",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Что выводит из строя машину у железной дороги?",
+    "options": [
+      "Взрыв гранаты",
+      "Полицейские шипы",
+      "Падение с моста",
+      "Удар поезда"
+    ],
+    "answer": 3,
+    "why": "Поезд задевает заднюю часть автомобиля.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/prologue"
+  },
+  {
+    "id": 25,
+    "tag": "Пролог",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Кто снимает маску Майкла внутри хранилища?",
+    "options": [
+      "Охранник",
+      "Брэд",
+      "Тревор",
+      "Дэйв"
+    ],
+    "answer": 0,
+    "why": "Тревор затем убивает охранника.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/prologue"
+  },
+  {
+    "id": 26,
+    "tag": "Закопать топор",
+    "icon": "🚘",
+    "points": 3,
+    "q": "На чьей машине Тревор едет к аэродрому после ссоры?",
+    "options": [
+      "Флойда",
+      "Майкла",
+      "Рона",
+      "Уэйда"
+    ],
+    "answer": 1,
+    "why": "Тревор забирает машину у дома Майкла.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/bury-the-hatchet"
+  },
+  {
+    "id": 27,
+    "tag": "Закопать топор",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Чьи люди преследуют героев в Северном Янктоне?",
+    "options": [
+      "Девина Уэстона",
+      "Харольда Джозефа",
+      "Вэй Чэна",
+      "Мартина Мадрасо"
+    ],
+    "answer": 2,
+    "why": "Чэн хочет отнять бизнес Тревора.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/bury-the-hatchet"
+  },
+  {
+    "id": 28,
+    "tag": "Закопать топор",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Почему выстрел Тревора в Майкла на кладбище не происходит?",
+    "options": [
+      "Заканчивается способность",
+      "Рон звонит в последний момент",
+      "Дэйв выбивает оружие",
+      "Пистолет заклинивает"
+    ],
+    "answer": 3,
+    "why": "Тревор бросает заклинивший пистолет.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/bury-the-hatchet"
+  },
+  {
+    "id": 29,
+    "tag": "Закопать топор",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Почему Майкл не может уехать с кладбища на машине?",
+    "options": [
+      "Тревор её обездвижил",
+      "Чэн прострелил колёса",
+      "Дэйв забрал ключи",
+      "Двигатель замёрз"
+    ],
+    "answer": 0,
+    "why": "Майкл оказывается в окружении людей Чэна.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/bury-the-hatchet"
+  },
+  {
+    "id": 30,
+    "tag": "Закопать топор",
+    "icon": "🚘",
+    "points": 3,
+    "q": "Как Майкл добирается в Северный Янктон в этой миссии?",
+    "options": [
+      "На военном вертолёте",
+      "Регулярным авиарейсом",
+      "Самолётом Тревора",
+      "Поездом"
+    ],
+    "answer": 1,
+    "why": "Тревор летит отдельно с аэродрома Сэнди-Шорс.",
+    "source": "https://www.gtabase.com/grand-theft-auto-v/missions/bury-the-hatchet"
+  }
+]

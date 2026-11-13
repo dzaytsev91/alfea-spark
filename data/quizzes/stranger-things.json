@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какую дату указывает начало исчезновения Уилла?",
+    "options": [
+      "6 ноября 1983",
+      "5 ноября 1983",
+      "6 ноября 1984",
+      "7 ноября 1982"
+    ],
+    "answer": 0,
+    "why": "Это исходная ночь истории.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-1-recap"
+  },
+  {
+    "id": 2,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "В копии какого здания Джойс и Хоппер находят Уилла в Изнанке?",
+    "options": [
+      "Полицейского участка",
+      "Публичной библиотеки",
+      "Школьной столовой",
+      "Лаборатории"
+    ],
+    "answer": 1,
+    "why": "Его находят в подвале библиотеки.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-1-recap"
+  },
+  {
+    "id": 3,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какому ведомству подчиняется лаборатория Хоукинса?",
+    "options": [
+      "ФБР",
+      "Министерству образования",
+      "Министерству энергетики",
+      "Министерству обороны"
+    ],
+    "answer": 2,
+    "why": "Эксперименты скрываются за энергетическим ведомством.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-1-recap"
+  },
+  {
+    "id": 4,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "Чем набито найденное в морге поддельное тело Уилла?",
+    "options": [
+      "Песком",
+      "Опилками",
+      "Поролоновыми шариками",
+      "Ватой"
+    ],
+    "answer": 3,
+    "why": "Хоппер разрезает тело и обнаруживает подлог.",
+    "source": "https://itsnetflixnerd.com/stranger-things-season-1-recap/"
+  },
+  {
+    "id": 5,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какое заведение кормит сбежавшую Одиннадцать в начале истории?",
+    "options": [
+      "Benny’s Burgers",
+      "Enzo’s",
+      "Hawkins Diner",
+      "Family Video"
+    ],
+    "answer": 0,
+    "why": "Бенни звонит в социальную службу.",
+    "source": "https://itsnetflixnerd.com/stranger-things-season-1-recap/"
+  },
+  {
+    "id": 6,
+    "tag": "Сезон 1",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какие два образа использует мистер Кларк для объяснения измерений?",
+    "options": [
+      "Паук и канатоходец",
+      "Блоха и акробат",
+      "Рыба и птица",
+      "Муравей и велосипедист"
+    ],
+    "answer": 1,
+    "why": "Блоха может попасть на обратную сторону каната.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-1-recap"
+  },
+  {
+    "id": 7,
+    "tag": "Сезон 2",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какой шоколад связывает имя Д’Артаньяна и его любимое лакомство?",
+    "options": [
+      "Snickers",
+      "Baby Ruth",
+      "3 Musketeers",
+      "Milky Way"
+    ],
+    "answer": 2,
+    "why": "Отсюда Дастин берёт имя питомца.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-2-recap"
+  },
+  {
+    "id": 8,
+    "tag": "Сезон 2",
+    "icon": "📻",
+    "points": 3,
+    "q": "Кто нанял Мюррея расследовать исчезновение Барб?",
+    "options": [
+      "Сэм Оуэнс",
+      "Шериф Хоппер",
+      "Мать Одиннадцать",
+      "Её родители"
+    ],
+    "answer": 3,
+    "why": "Семья Холланд не верит официальной версии.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-2-recap"
+  },
+  {
+    "id": 9,
+    "tag": "Сезон 2",
+    "icon": "📻",
+    "points": 3,
+    "q": "Что Боб распознаёт в склеенных рисунках Уилла?",
+    "options": [
+      "Карту Хоукинса",
+      "Схему лаборатории",
+      "Карту звёзд",
+      "План школы"
+    ],
+    "answer": 0,
+    "why": "Подземные ходы повторяют географию города.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-2-recap"
+  },
+  {
+    "id": 10,
+    "tag": "Сезон 2",
+    "icon": "📻",
+    "points": 3,
+    "q": "Как зовут кошку Хендерсонов, которую съедает Дарт?",
+    "options": [
+      "Тьюз",
+      "Мьюз",
+      "Йертл",
+      "Честер"
+    ],
+    "answer": 1,
+    "why": "Это Мьюз; позже в семье появляется Тьюз.",
+    "source": "https://8flix.com/assets/transcripts/s/tt4574334/Stranger-Things-transcript-208-Chapter-Eight-The-Mind-Flayer.pdf"
+  },
+  {
+    "id": 11,
+    "tag": "Сезон 2",
+    "icon": "📻",
+    "points": 3,
+    "q": "Почему поджог подземных лоз вызывает у Уилла приступ?",
+    "options": [
+      "Он выпил заражённую воду",
+      "На нём стоит передатчик",
+      "Он подключён к общему разуму",
+      "Лозы выделяют яд только для него"
+    ],
+    "answer": 2,
+    "why": "Повреждение общей сети чувствует и Уилл.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-2-recap"
+  },
+  {
+    "id": 12,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "В какой газете стажируются Нэнси и Джонатан?",
+    "options": [
+      "The Weekly Streak",
+      "Hawkins Daily News",
+      "The Indiana Tribune",
+      "The Hawkins Post"
+    ],
+    "answer": 3,
+    "why": "Нэнси пытается получить там настоящую историю.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-3-recap"
+  },
+  {
+    "id": 13,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какой звук выдаёт, что запись Дастина сделана в торговом центре?",
+    "options": [
+      "Мелодия механической лошадки",
+      "Объявление кинотеатра",
+      "Сигнал лифта",
+      "Джингл Scoops Ahoy"
+    ],
+    "answer": 0,
+    "why": "Стив узнаёт фоновую музыку.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-3-recap"
+  },
+  {
+    "id": 14,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "В каком штате живёт Сьюзи, с которой связывается Дастин?",
+    "options": [
+      "Колорадо",
+      "Юта",
+      "Невада",
+      "Аризона"
+    ],
+    "answer": 1,
+    "why": "Она живёт далеко от Хоукинса.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-3-recap"
+  },
+  {
+    "id": 15,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Как зовут мэра, помогавшего скупать землю для русских?",
+    "options": [
+      "Брюс Лоу",
+      "Дональд Мелвальд",
+      "Ларри Клайн",
+      "Том Холлоуэй"
+    ],
+    "answer": 2,
+    "why": "Хоппер узнаёт об этом после встречи в мэрии.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-3-recap"
+  },
+  {
+    "id": 16,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Чем оказывается склад, в котором запираются Стив, Робин, Дастин и Эрика?",
+    "options": [
+      "Вагоном метро",
+      "Холодильной камерой",
+      "Герметичной лабораторией",
+      "Грузовым лифтом"
+    ],
+    "answer": 3,
+    "why": "Комната уходит глубоко под торговый центр.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-3-recap"
+  },
+  {
+    "id": 17,
+    "tag": "Финал сезона 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какое числовое значение Сьюзи диктует как постоянную Планка?",
+    "options": [
+      "6.62607004",
+      "6.62608004",
+      "6.62617004",
+      "6.62067004"
+    ],
+    "answer": 0,
+    "why": "Вопрос о реплике сериала, а не записи единиц СИ.",
+    "source": "https://www.thewrap.com/stranger-things-season-3-recap/"
+  },
+  {
+    "id": 18,
+    "tag": "Финал сезона 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Как называется радиоустановка Дастина на холме?",
+    "options": [
+      "Apollo",
+      "Cerebro",
+      "Polaris",
+      "Horizon"
+    ],
+    "answer": 1,
+    "why": "Её название отсылает к «Людям Икс».",
+    "source": "https://www.thewrap.com/stranger-things-season-3-recap/"
+  },
+  {
+    "id": 19,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какой вкус Slurpee изначально требует Алексей?",
+    "options": [
+      "Виноградный",
+      "Лимонный",
+      "Вишнёвый",
+      "Клубничный"
+    ],
+    "answer": 2,
+    "why": "Клубничный он сначала отвергает.",
+    "source": "https://www.thewrap.com/stranger-things-season-3-recap/"
+  },
+  {
+    "id": 20,
+    "tag": "Сезон 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какой лагерь познакомил Дастина и Сьюзи?",
+    "options": [
+      "Camp Crystal Lake",
+      "Camp Hawkins",
+      "Camp Science Star",
+      "Camp Know Where"
+    ],
+    "answer": 3,
+    "why": "Название играет на словах «know where».",
+    "source": "https://www.thewrap.com/stranger-things-season-3-recap/"
+  },
+  {
+    "id": 21,
+    "tag": "Финал сезона 3",
+    "icon": "📻",
+    "points": 3,
+    "q": "В какой ресторан Джойс соглашается сходить с Хоппером после спасения?",
+    "options": [
+      "Enzo’s",
+      "Benny’s",
+      "Scoops Ahoy",
+      "Hawkins Diner"
+    ],
+    "answer": 0,
+    "why": "Обещание касается настоящего свидания.",
+    "source": "https://www.thewrap.com/stranger-things-season-3-recap/"
+  },
+  {
+    "id": 22,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "С каким номером ребёнка работает Бреннер в открывающем флешбэке 1979 года?",
+    "options": [
+      "Пять",
+      "Десять",
+      "Восемь",
+      "Два"
+    ],
+    "answer": 1,
+    "why": "До резни он проводит занятие с Десятым.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-4-recap"
+  },
+  {
+    "id": 23,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какой колледж Джонатан якобы ожидает, скрывая решение остаться в Калифорнии?",
+    "options": [
+      "Roane",
+      "Yale",
+      "Emerson",
+      "Purdue"
+    ],
+    "answer": 2,
+    "why": "Нэнси не знает о смене планов.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-4-recap"
+  },
+  {
+    "id": 24,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Чем Джойс зарабатывает дома в начале четвёртого сезона?",
+    "options": [
+      "Страховыми консультациями",
+      "Телемаркетингом пиццы",
+      "Переводом писем",
+      "Продажей энциклопедий"
+    ],
+    "answer": 3,
+    "why": "Посылка из России прерывает эту работу.",
+    "source": "https://www.netflix.com/tudum/articles/stranger-things-season-4-recap"
+  },
+  {
+    "id": 25,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Где раненый агент прячет телефонный номер проекта «Нина»?",
+    "options": [
+      "В ручке",
+      "В зажигалке",
+      "В кассете",
+      "В очках"
+    ],
+    "answer": 0,
+    "why": "Звонок приводит к компьютерному модему.",
+    "source": "https://www.thewrap.com/stranger-things-season-4-volume-1-recap/"
+  },
+  {
+    "id": 26,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Какая песня связана со спасением Виктора Крила от видения?",
+    "options": [
+      "Separate Ways",
+      "Dream a Little Dream of Me",
+      "Running Up That Hill",
+      "Should I Stay or Should I Go"
+    ],
+    "answer": 1,
+    "why": "Робин узнаёт мелодию после интервью.",
+    "source": "https://www.thewrap.com/stranger-things-season-4-volume-1-recap/"
+  },
+  {
+    "id": 27,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "В каком учреждении Нэнси и Робин беседуют с Виктором Крилом?",
+    "options": [
+      "Ленора Хиллс",
+      "Саннивейл",
+      "Пеннхёрст",
+      "Хоукинс Мемориал"
+    ],
+    "answer": 2,
+    "why": "Они выдают себя за студенток-психологов.",
+    "source": "https://www.thewrap.com/stranger-things-season-4-volume-1-recap/"
+  },
+  {
+    "id": 28,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Как называется группа Эдди Мансона?",
+    "options": [
+      "Hellfire Saints",
+      "Iron Coffin",
+      "Midnight Dungeon",
+      "Corroded Coffin"
+    ],
+    "answer": 3,
+    "why": "Hellfire — его клуб D&D, а не группа.",
+    "source": "https://www.subtitlecat.com/subs/1306/Stranger.Things.S04.en.html"
+  },
+  {
+    "id": 29,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Под каким именем персонажа Эрика играет в кампании Эдди?",
+    "options": [
+      "Lady Applejack",
+      "Lady Firefly",
+      "Queen Nightshade",
+      "Princess Stardust"
+    ],
+    "answer": 0,
+    "why": "Она представляется леди Эпплджек.",
+    "source": "https://www.subtitlecat.com/subs/1306/Stranger.Things.S04.en.html"
+  },
+  {
+    "id": 30,
+    "tag": "Сезон 4",
+    "icon": "📻",
+    "points": 3,
+    "q": "Как Бреннер назвал устройство, сдерживавшее способности Генри?",
+    "options": [
+      "Пандора",
+      "Сотерия",
+      "Нина",
+      "Церебро"
+    ],
+    "answer": 1,
+    "why": "Одиннадцать удаляет его из шеи Генри.",
+    "source": "https://www.subtitlecat.com/subs/1306/Stranger.Things.S04.en.html"
+  }
+]
