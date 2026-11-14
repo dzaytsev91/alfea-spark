@@ -120,5 +120,16 @@ const quizCatalog=[
     "color": "#78474b",
     "art": "hunters",
     "count": 30
+  },
+  {
+    "slug": "naruto",
+    "title": "Наруто",
+    "category": "series",
+    "scope": "«Наруто» и «Шиппуден» · основной сюжет · без «Боруто» · спойлеры",
+    "description": "500 вопросов о тактике боёв, запретных техниках, кланах и тайнах мира шиноби.",
+    "icon": "🍥",
+    "color": "#b76b38",
+    "art": "shinobi",
+    "count": 500
   }
 ];

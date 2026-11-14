@@ -1,6 +1,7 @@
 'use strict';
 function hubEscape(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));}
 const aliases={
+  naruto:'naruto shippuden шиппуден сиппуден шиноби саске какаши',
   supernatural:'supernatural сверхи винчестеры сэм дин',
   'witcher-3':'the witcher ведьмак геральт',skyrim:'скайрим elder scrolls',minecraft:'майнкрафт',
   'gta-v':'гта gta 5 grand theft auto','elden-ring':'элден ринг',

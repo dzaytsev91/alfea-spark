@@ -2,6 +2,7 @@
 // Original decorative SVG illustrations, shared by the cards and quiz intros.
 function renderQuizArt(kind,color){
   const drawings={
+    shinobi:'<path d="M160 85q100-32 200 0v68q-100 32-200 0Z"/><path d="M192 80v78m136-78v78m-168-43-43 35 43-11m200-24 43 35-43-11"/><path d="M282 110c-3-24-39-22-42 0-4 24 29 34 43 15 14-21-4-45-29-40-36 8-39 57-6 69m-5-39 17 1m-29 24-17 12"/>',
     hunters:'<circle cx="260" cy="119" r="87"/><circle cx="260" cy="119" r="74"/><path d="m260 45 44 134-115-83h142l-115 83Z"/>',
     swords:'<path d="m226 40 119 126m-45-126L181 166"/><path d="m209 133 35 34m32-34 35 34M217 157l-22 24m101-24 22 24"/>',
     dragon:'<path d="m183 157 29-81 55-26 51 28-33 20 24 13-34 20 10 45-50-15-37 21 12-39-27-6m32-58-5-31 30 19m26 11 22-28 9 37"/><circle cx="265" cy="86" r="3" fill="currentColor"/>',

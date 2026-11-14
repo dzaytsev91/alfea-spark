@@ -18,28 +18,29 @@ function setup(slug=catalog[0].slug,{storage=new Map(),blocked=false,loadFailure
  if(banks[slug])vm.runInContext('questionBank='+JSON.stringify(banks[slug])+';questionById=new Map(questionBank.map(q=>[q.id,q]));',sandbox);
  return {run:code=>vm.runInContext(code,sandbox),element,storage,getCopied:()=>copied,getPath:()=>path,getFetched:()=>fetched};
 }
-test('eleven distinct quizzes with 330 complete and unique questions',()=>{
- assert.equal(catalog.length,11);assert.equal(new Set(catalog.map(q=>q.slug)).size,11);
- assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,6);
+test('twelve distinct quizzes with 830 complete and unique questions',()=>{
+ assert.equal(catalog.length,12);assert.equal(new Set(catalog.map(q=>q.slug)).size,12);
+ assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,7);
  const seen=new Set();
  const normalize=s=>s.toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]/gu,'');
  for(const quiz of catalog){
-  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,30);assert.equal(quiz.count,bank.length);
-  assert.equal(new Set(bank.map(q=>q.id)).size,30);
+  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,quiz.slug==='naruto'?500:30);assert.equal(quiz.count,bank.length);
+  assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
   for(const q of bank){
    assert(Number.isInteger(q.id)&&q.id>0);assert.equal(q.options.length,4);assert.equal(new Set(q.options.map(normalize)).size,4,JSON.stringify(q));assert(q.answer>=0&&q.answer<=3&&Number.isInteger(q.answer));assert.equal(q.points,3);assert(q.why&&q.tag);assert.equal(new URL(q.source).protocol,'https:');assert(!/\[MASKED|undefined|TODO|<script/i.test(JSON.stringify(q)));
    const key=normalize(q.q);assert(!seen.has(key),q.q);seen.add(key);
   }
  }
- assert.equal(seen.size,330);
+ assert.equal(seen.size,830);
 });
 test('every bank produces random valid attempts and prioritizes all unseen questions after reload',()=>{
  for(const quiz of catalog){
   const a=setup(quiz.slug),seen=new Set(),orders=new Set();
-  for(let i=0;i<40;i++){const picked=a.run('chooseQuestions()');assert.equal(picked.length,20);assert.equal(new Set(picked.map(q=>q.id)).size,20);picked.forEach(q=>seen.add(q.id));orders.add(picked.map(q=>q.id).join(','));}
-  assert.equal(seen.size,30);assert.equal(orders.size,40);
-  const first=a.run('questions=chooseQuestions();questions.forEach(q=>rememberQuestion(q.id));questions.map(q=>q.id)');
-  const b=setup(quiz.slug,{storage:a.storage}),next=b.run('chooseQuestions()');assert.equal(next.filter(q=>!first.includes(q.id)).length,10);
+  for(let i=0;i<40;i++){const picked=a.run('(()=>{const batch=chooseQuestions();batch.forEach(q=>rememberQuestion(q.id));return batch})()');assert.equal(picked.length,20);assert.equal(new Set(picked.map(q=>q.id)).size,20);assert.equal(picked.filter(q=>!seen.has(q.id)).length,Math.min(20,banks[quiz.slug].length-seen.size));picked.forEach(q=>seen.add(q.id));orders.add(picked.map(q=>q.id).join(','));}
+  assert.equal(seen.size,banks[quiz.slug].length);assert.equal(orders.size,40);
+  const fresh=setup(quiz.slug);
+  const first=fresh.run('questions=chooseQuestions();questions.forEach(q=>rememberQuestion(q.id));questions.map(q=>q.id)');
+  const b=setup(quiz.slug,{storage:fresh.storage}),next=b.run('chooseQuestions()');assert.equal(next.filter(q=>!first.includes(q.id)).length,Math.min(20,banks[quiz.slug].length-20));
  }
 });
 test('history is independent across quizzes and survives denied or malformed storage',()=>{
