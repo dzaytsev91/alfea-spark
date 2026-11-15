@@ -32,7 +32,7 @@ function chooseQuestions(){
 }
 function maxPoints(){return questions.reduce((total,q)=>total+q.points,0);}
 function renderHome(){
-  app.innerHTML=`<section class="hero"><div class="eyebrow">Только хард · ${quiz.category==='games'?'игры':'сериалы'}</div><h1>${escapeHTML(quiz.title)}</h1><p>${escapeHTML(quiz.description)}</p><div class="emblem" aria-hidden="true">${renderQuizArt(quiz.art,quiz.color)}</div><div class="stat-row"><span>${questionBank.length} вопросов в банке</span><span>20 за попытку</span><span>3 балла за ответ</span></div><p class="scope">${escapeHTML(quiz.scope)}</p><button class="primary" id="start">Начать испытание <span>→</span></button><p class="hint">Сначала покажем вопросы, которых ты ещё не видел в этом браузере.</p></section>`;
+  app.innerHTML=`<section class="hero"><div class="eyebrow">Только хард · ${({games:'игры',series:'сериалы',worlds:'волшебные миры',music:'музыка'})[quiz.category]}</div><h1>${escapeHTML(quiz.title)}</h1><p>${escapeHTML(quiz.description)}</p><div class="emblem" aria-hidden="true">${renderQuizArt(quiz.art,quiz.color)}</div><div class="stat-row"><span>${questionBank.length} вопросов в банке</span><span>20 за попытку</span><span>3 балла за ответ</span></div><p class="scope">${escapeHTML(quiz.scope)}</p><button class="primary" id="start">Начать испытание <span>→</span></button><p class="hint">Сначала покажем вопросы, которых ты ещё не видел в этом браузере.</p></section>`;
   document.querySelector('#start').onclick=startQuiz;
 }
 function startQuiz(){questions=chooseQuestions();optionOrders=questions.map(()=>shuffle([0,1,2,3]));answers=[];step=0;history.replaceState(null,'',quizPath());renderQuestion();}

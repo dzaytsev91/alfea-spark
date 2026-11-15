@@ -18,20 +18,20 @@ function setup(slug=catalog[0].slug,{storage=new Map(),blocked=false,loadFailure
  if(banks[slug])vm.runInContext('questionBank='+JSON.stringify(banks[slug])+';questionById=new Map(questionBank.map(q=>[q.id,q]));',sandbox);
  return {run:code=>vm.runInContext(code,sandbox),element,storage,getCopied:()=>copied,getPath:()=>path,getFetched:()=>fetched};
 }
-test('twelve distinct quizzes with 830 complete and unique questions',()=>{
- assert.equal(catalog.length,12);assert.equal(new Set(catalog.map(q=>q.slug)).size,12);
- assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,7);
+test('fifteen distinct quizzes with 2330 complete and unique questions',()=>{
+ assert.equal(catalog.length,15);assert.equal(new Set(catalog.map(q=>q.slug)).size,15);
+ assert.equal(catalog.filter(q=>q.category==='music').length,1);assert.equal(catalog.filter(q=>q.category==='worlds').length,1);assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,8);
  const seen=new Set();
  const normalize=s=>s.toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]/gu,'');
  for(const quiz of catalog){
-  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,quiz.slug==='naruto'?500:30);assert.equal(quiz.count,bank.length);
+  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,['naruto','oxxxymiron','twilight','vampire-diaries'].includes(quiz.slug)?500:30);assert.equal(quiz.count,bank.length);
   assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
   for(const q of bank){
    assert(Number.isInteger(q.id)&&q.id>0);assert.equal(q.options.length,4);assert.equal(new Set(q.options.map(normalize)).size,4,JSON.stringify(q));assert(q.answer>=0&&q.answer<=3&&Number.isInteger(q.answer));assert.equal(q.points,3);assert(q.why&&q.tag);assert.equal(new URL(q.source).protocol,'https:');assert(!/\[MASKED|undefined|TODO|<script/i.test(JSON.stringify(q)));
    const key=normalize(q.q);assert(!seen.has(key),q.q);seen.add(key);
   }
  }
- assert.equal(seen.size,830);
+ assert.equal(seen.size,2330);
 });
 test('every bank produces random valid attempts and prioritizes all unseen questions after reload',()=>{
  for(const quiz of catalog){
