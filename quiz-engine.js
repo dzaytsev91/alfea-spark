@@ -48,13 +48,18 @@ function renderQuestion(){
 function resultHash(values){
   return '#score=1.'+questions.map((q,i)=>q.id.toString(36)+'-'+values[i]).join('.');
 }
-function decodeHash(hash){
+function parseScore(hash){
   if(!hash.startsWith('#score=1.'))return null;
   const entries=hash.slice(9).split('.');
   if(entries.length!==quizLength||entries.some(entry=>!/^([0-9a-z]{1,4})-[0-3]$/.test(entry)))return null;
   const ids=entries.map(entry=>parseInt(entry.split('-')[0],36));
-  if(new Set(ids).size!==quizLength||ids.some(id=>!questionById.has(id)))return null;
-  return {questions:ids.map(id=>questionById.get(id)),answers:entries.map(entry=>Number(entry.split('-')[1])),version:1};
+  if(new Set(ids).size!==quizLength||ids.includes(0))return null;
+  return {ids,answers:entries.map(entry=>Number(entry.split('-')[1]))};
+}
+function decodeHash(hash,lookup=questionById){
+  const score=parseScore(hash);
+  if(!score||score.ids.some(id=>!lookup.has(id)))return null;
+  return {questions:score.ids.map(id=>lookup.get(id)),answers:score.answers,version:1};
 }
 function showNotice(message){const notice=document.querySelector('#notice');notice.textContent=message;notice.classList.remove('hidden');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.classList.add('hidden'),2600);}
 function showResult(values,shared){
@@ -80,8 +85,30 @@ async function shareResult(){
     showNotice(copied?'Ссылка скопирована':'Не удалось скопировать ссылку');
   }
 }
-function renderRoute(){
-  const shared=decodeHash(location.hash);
+let archivedQuestions;
+async function renderRoute(){
+  const hash=location.hash;
+  let shared=decodeHash(hash);
+  if(!shared&&quiz.archive){
+    const score=parseScore(hash);
+    if(score&&score.ids.every(id=>id<=quiz.archive.lastId)){
+      try{
+        if(!archivedQuestions){
+          const response=await fetch(quiz.archive.file);
+          if(!response.ok)throw Error('Archive unavailable');
+          const bank=await response.json();
+          archivedQuestions=new Map(bank.map(q=>[q.id,q]));
+        }
+      }catch(error){
+        if(location.hash!==hash)return;
+        app.innerHTML='<section class="result-card"><h1>Результат не загрузился</h1><button class="primary" id="retry">Повторить</button></section>';
+        document.querySelector('#retry').onclick=renderRoute;
+        return;
+      }
+      if(location.hash!==hash)return;
+      shared=decodeHash(hash,archivedQuestions);
+    }
+  }
   if(shared){questions=shared.questions;answers=shared.answers;showResult(shared.answers,true);}else renderHome();
 }
 async function initializeQuiz(){
