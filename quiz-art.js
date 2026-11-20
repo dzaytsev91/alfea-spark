@@ -2,6 +2,7 @@
 // Original decorative SVG illustrations, shared by the cards and quiz intros.
 function renderQuizArt(kind,color){
   const drawings={
+    globe:'<circle cx="260" cy="117" r="78"/><ellipse cx="260" cy="117" rx="36" ry="78"/><path d="M182 117h156m-144-42q66 24 132 0m-132 84q66-24 132 0"/>',
     microphone:'<rect x="235" y="35" width="50" height="99" rx="25"/><path d="M219 94v18a41 41 0 0 0 82 0V94m-41 59v40m-30 0h60m-52-130h21m-21 15h21m-21 15h21m73-31 18-13m-18 36 25-3m-25 27 18 12"/>',
     twilight:'<circle cx="322" cy="69" r="29"/><path d="m171 184 38-126 38 126m-67-27h58m-50-27h42m17 54 30-96 30 96m-49-22h39m-35-24h31m-48 46 30-121 30 121m-50-31h39m-32-28h26M139 197h240"/>',
     vampires:'<path d="M187 69q73 22 146 0l-20 66-53 55-53-55Z"/><path d="m207 80 14 59 15-51m48 0 15 51 14-59m-84 75q31 14 62 0"/><path d="M260 33c0 17-17 24-17 35a17 17 0 0 0 34 0c0-11-17-18-17-35Z"/>',

@@ -1,6 +1,7 @@
 'use strict';
 function hubEscape(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));}
 const aliases={
+  'general-knowledge':'эрудиция кругозор наука история география general knowledge',
   oxxxymiron:'оксимирон окси мирон треки рэп рэпер oxxxy',
   twilight:'twilight сумерки белла эдвард джейкоб вампиры',
   'vampire-diaries':'the vampire diaries tvd дв дневники вампира елена стефан деймон',
@@ -13,7 +14,7 @@ const aliases={
 };
 const cards=document.querySelector('.cards');
 const orderedQuizzes=[...quizCatalog].sort((a,b)=>a.category.localeCompare(b.category)||quizCatalog.indexOf(a)-quizCatalog.indexOf(b));
-cards.insertAdjacentHTML('beforeend',orderedQuizzes.map(quiz=>`<article class="card new-quiz" data-category="${quiz.category}" data-search="${hubEscape(quiz.title+' '+(aliases[quiz.slug]||''))}"><div class="scene" aria-hidden="true"><span class="corner">${({series:'сериал',games:'игра',worlds:'сага',music:'музыка'})[quiz.category]} · только хард</span>${renderQuizArt(quiz.art,quiz.color)}</div><div class="card-body"><div class="card-tag">Новый квиз</div><h2>${hubEscape(quiz.title)}</h2><p>${hubEscape(quiz.description)}</p><div class="meta"><span>${quiz.count} в банке</span><span>20 за попытку</span><span>до 60 баллов</span></div><a class="cta" href="./quiz.html?quiz=${quiz.slug}">Принять вызов <b aria-hidden="true">↗</b></a></div></article>`).join(''));
+cards.insertAdjacentHTML('beforeend',orderedQuizzes.map(quiz=>`<article class="card new-quiz" data-category="${quiz.category}" data-search="${hubEscape(quiz.title+' '+(aliases[quiz.slug]||''))}"><div class="scene" aria-hidden="true"><span class="corner">${({series:'сериал',games:'игра',worlds:'сага',music:'музыка',knowledge:'эрудиция'})[quiz.category]} · ${hubEscape(quiz.difficulty||'только хард')}</span>${renderQuizArt(quiz.art,quiz.color)}</div><div class="card-body"><div class="card-tag">Новый квиз</div><h2>${hubEscape(quiz.title)}</h2><p>${hubEscape(quiz.description)}</p><div class="meta"><span>${quiz.count} в банке</span><span>20 за попытку</span><span>до 60 баллов</span></div><a class="cta" href="./quiz.html?quiz=${quiz.slug}">Принять вызов <b aria-hidden="true">↗</b></a></div></article>`).join(''));
 let category='all';
 const normalize=value=>value.toLocaleLowerCase('ru-RU').replace(/ё/g,'е').trim();
 function filterQuizzes(){
