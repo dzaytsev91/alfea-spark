@@ -23,11 +23,50 @@ function rememberQuestion(id){
   try{localStorage.setItem(seenStorageKey,JSON.stringify([...seenQuestionIds]));}catch(error){/* In-memory history still works when storage is unavailable. */}
 }
 function shuffle(items){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
+function chooseSubjectRound(fresh,seen,historySubjects){
+  const picked=[],subjects=new Set();
+  for(const pool of [fresh,seen]){
+    if(!pool.length||picked.length===quizLength)continue;
+    const groups=new Map();
+    for(const question of pool){
+      if(!groups.has(question.tag))groups.set(question.tag,[]);
+      groups.get(question.tag).push(question);
+    }
+    const roundsLeft=Math.ceil(pool.length/quizLength);
+    const ordered=shuffle([...groups.keys()]);
+    // A subject with one question left per remaining round needs a slot now.
+    ordered.sort((a,b)=>Number(groups.get(b).length>=roundsLeft)-Number(groups.get(a).length>=roundsLeft));
+    const histories=ordered.filter(subject=>historySubjects.includes(subject));
+    const historyLeft=histories.reduce((sum,subject)=>sum+groups.get(subject).length,0);
+    const historyLimit=Math.max(1,historyLeft-roundsLeft+1);
+    let historyCount=picked.filter(q=>historySubjects.includes(q.tag)).length;
+    function take(subject){
+      picked.push(groups.get(subject).pop());
+      subjects.add(subject);
+      if(historySubjects.includes(subject))historyCount++;
+    }
+    if(histories.length&&!historyCount)take(histories[0]);
+    for(const subject of ordered){
+      if(picked.length===quizLength)break;
+      if(subjects.has(subject)||(historySubjects.includes(subject)&&historyCount>=historyLimit))continue;
+      take(subject);
+    }
+    // A partially completed sequence may have unseen questions in only a few subjects.
+    const remaining=shuffle([...groups.values()].flat());
+    for(const question of remaining){
+      if(picked.length===quizLength)break;
+      picked.push(question);
+      subjects.add(question.tag);
+    }
+  }
+  return shuffle(picked);
+}
 function chooseQuestions(){
   seenQuestionIds=readSeenQuestions();
   const candidates=shuffle(questionBank);
   const fresh=candidates.filter(q=>!seenQuestionIds.has(q.id));
   const seen=candidates.filter(q=>seenQuestionIds.has(q.id));
+  if(quiz.historySubjects)return chooseSubjectRound(fresh,seen,quiz.historySubjects);
   return shuffle([...fresh,...seen].slice(0,quizLength));
 }
 function maxPoints(){return questions.reduce((total,q)=>total+q.points,0);}

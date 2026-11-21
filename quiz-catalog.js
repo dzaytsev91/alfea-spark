@@ -169,12 +169,14 @@ const quizCatalog=[
     "slug": "general-knowledge",
     "title": "Общие знания",
     "category": "knowledge",
-    "scope": "10 предметов · программа старшей школы",
-    "description": "Цена выросла на 20 %, а потом снизилась на 20 %. Вернулась ли она к исходной? В каждом раунде — задачи и вопросы из разных школьных предметов.",
-    "difficulty": "10–11 классы",
+    "scope": "28 школьных предметов и направлений · 20 заданий за попытку",
+    "description": "Сопоставь два исторических документа, найди ошибку в эксперименте или рассчитай орбиту. Для ответа понадобятся и знания, и вывод из условий задачи.",
+    "difficulty": "10–11 классы · повышенная сложность",
+    "historySubjects": ["История России", "Всеобщая история"],
     "archives": [
       { "firstId": 1, "lastId": 500, "file": "./data/archive/general-knowledge-v1.json" },
-      { "firstId": 501, "lastId": 1000, "file": "./data/archive/general-knowledge-v2.json" }
+      { "firstId": 501, "lastId": 1000, "file": "./data/archive/general-knowledge-v2.json" },
+      { "firstId": 1001, "lastId": 1500, "file": "./data/archive/general-knowledge-v3.json" }
     ],
     "icon": "🌍",
     "color": "#397676",
