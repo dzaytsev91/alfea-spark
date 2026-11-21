@@ -18,22 +18,22 @@ function setup(slug=catalog[0].slug,{storage=new Map(),blocked=false,loadFailure
  if(banks[slug])vm.runInContext('questionBank='+JSON.stringify(banks[slug])+';questionById=new Map(questionBank.map(q=>[q.id,q]));',sandbox);
  return {run:code=>vm.runInContext(code,sandbox),element,storage,getCopied:()=>copied,getPath:()=>path,getFetched:()=>fetched};
 }
-test('sixteen distinct quizzes with 2830 complete and unique questions',()=>{
- assert.equal(catalog.length,16);assert.equal(new Set(catalog.map(q=>q.slug)).size,16);
- assert.equal(catalog.filter(q=>q.category==='knowledge').length,1);assert.equal(catalog.filter(q=>q.category==='music').length,1);assert.equal(catalog.filter(q=>q.category==='worlds').length,1);assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,8);
+test('seventeen distinct quizzes with 3330 complete and unique questions',()=>{
+ assert.equal(catalog.length,17);assert.equal(new Set(catalog.map(q=>q.slug)).size,17);
+ assert.equal(catalog.filter(q=>q.category==='knowledge').length,2);assert.equal(catalog.filter(q=>q.category==='music').length,1);assert.equal(catalog.filter(q=>q.category==='worlds').length,1);assert.equal(catalog.filter(q=>q.category==='games').length,5);assert.equal(catalog.filter(q=>q.category==='series').length,8);
  const seen=new Set();
  // Mathematical signs, decimal separators and case can distinguish legitimate answers.
  const optionKey=s=>s.normalize('NFC').trim().replace(/\s+/g,' ');
  const normalize=s=>s.toLowerCase().replace(/ё/g,'е').replace(/[^\p{L}\p{N}]/gu,'');
  for(const quiz of catalog){
-  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,['naruto','oxxxymiron','twilight','vampire-diaries','general-knowledge'].includes(quiz.slug)?500:30);assert.equal(quiz.count,bank.length);
+  assert(/^[a-z0-9-]+$/.test(quiz.slug));assert(quiz.scope);const bank=banks[quiz.slug];assert.equal(bank.length,['naruto','oxxxymiron','twilight','vampire-diaries','general-knowledge','erudition'].includes(quiz.slug)?500:30);assert.equal(quiz.count,bank.length);
   assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
   for(const q of bank){
    assert(Number.isInteger(q.id)&&q.id>0);assert.equal(q.options.length,4);assert.equal(new Set(q.options.map(optionKey)).size,4,JSON.stringify(q));assert(q.answer>=0&&q.answer<=3&&Number.isInteger(q.answer));assert.equal(q.points,3);assert(q.why&&q.tag);assert.equal(new URL(q.source).protocol,'https:');assert(!/\[MASKED|undefined|TODO|<script/i.test(JSON.stringify(q)));
    const key=normalize(q.q);assert(!seen.has(key),q.q);seen.add(key);
   }
  }
- assert.equal(seen.size,2830);
+ assert.equal(seen.size,3330);
 });
 test('every bank produces random valid attempts and prioritizes all unseen questions after reload',()=>{
  for(const quiz of catalog){
@@ -65,9 +65,9 @@ test('middle school rounds use new questions and all earlier versions retain the
  a.run('startQuiz()');
  assert(a.run('questions.map(q=>q.id)').every(id=>activeIds.has(id)));
 });
-test('middle school rounds cover distinct subjects and history while exhausting all 500 questions',()=>{
- const slug='general-knowledge';
- assert.equal(new Set(banks[slug].map(q=>q.tag)).size,28);
+for(const [slug,subjectCount] of [['general-knowledge',28],['erudition',20]]){
+ test(slug+' rounds cover distinct topics and history while exhausting all 500 questions',()=>{
+ assert.equal(new Set(banks[slug].map(q=>q.tag)).size,subjectCount);
  const history=catalog.find(q=>q.slug===slug).historySubjects;
  for(let trial=0;trial<5;trial++){
   const a=setup(slug),seen=new Set();
@@ -80,6 +80,7 @@ test('middle school rounds cover distinct subjects and history while exhausting 
   assert.equal(seen.size,500);
  }
 });
+}
 test('history is independent across quizzes and survives denied or malformed storage',()=>{
  const storage=new Map(),a=setup('minecraft',{storage});a.run('questions=chooseQuestions();questions.forEach(q=>rememberQuestion(q.id))');
  const b=setup('gta-v',{storage});assert.equal(b.run('readSeenQuestions().size'),0);

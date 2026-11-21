@@ -166,6 +166,19 @@ const quizCatalog=[
     "count": 500
   },
   {
+    "slug": "erudition",
+    "title": "Общая эрудиция",
+    "category": "knowledge",
+    "scope": "20 тем · по одному вопросу из каждой за полный раунд",
+    "description": "Что умеет морской хронометр, из чего делают марципан и зачем на съёмках нужна хлопушка? Проверь свой кругозор.",
+    "difficulty": "Средняя сложность",
+    "historySubjects": ["История"],
+    "icon": "🧭",
+    "color": "#81522d",
+    "art": "globe",
+    "count": 500
+  },
+  {
     "slug": "general-knowledge",
     "title": "Общие знания",
     "category": "knowledge",
