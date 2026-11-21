@@ -170,13 +170,14 @@ const quizCatalog=[
     "title": "Общие знания",
     "category": "knowledge",
     "scope": "28 школьных предметов и направлений · 20 заданий за попытку",
-    "description": "Сопоставь два исторических документа, найди ошибку в эксперименте или рассчитай орбиту. Для ответа понадобятся и знания, и вывод из условий задачи.",
-    "difficulty": "10–11 классы · повышенная сложность",
+    "description": "Узнай, как Россия получила выход к Балтике, найди высоту лестницы по теореме Пифагора и прочитай объявление на иностранном языке.",
+    "difficulty": "7–9 классы · средняя сложность",
     "historySubjects": ["История России", "Всеобщая история"],
     "archives": [
       { "firstId": 1, "lastId": 500, "file": "./data/archive/general-knowledge-v1.json" },
       { "firstId": 501, "lastId": 1000, "file": "./data/archive/general-knowledge-v2.json" },
-      { "firstId": 1001, "lastId": 1500, "file": "./data/archive/general-knowledge-v3.json" }
+      { "firstId": 1001, "lastId": 1500, "file": "./data/archive/general-knowledge-v3.json" },
+      { "firstId": 1501, "lastId": 2000, "file": "./data/archive/general-knowledge-v4.json" }
     ],
     "icon": "🌍",
     "color": "#397676",

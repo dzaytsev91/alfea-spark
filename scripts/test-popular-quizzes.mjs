@@ -45,10 +45,10 @@ test('every bank produces random valid attempts and prioritizes all unseen quest
   const b=setup(quiz.slug,{storage:fresh.storage}),next=b.run('chooseQuestions()');assert.equal(next.filter(q=>!first.includes(q.id)).length,Math.min(20,banks[quiz.slug].length-20));
  }
 });
-test('advanced school rounds use new questions and all earlier versions retain their shared scores',async()=>{
+test('middle school rounds use new questions and all earlier versions retain their shared scores',async()=>{
  const slug='general-knowledge';
  const archives=catalog.find(q=>q.slug===slug).archives;
- assert.equal(archives.length,3);
+ assert.equal(archives.length,4);
  const activeIds=new Set(banks[slug].map(q=>q.id));
  const a=setup(slug);
  for(const archive of archives){
@@ -65,7 +65,7 @@ test('advanced school rounds use new questions and all earlier versions retain t
  a.run('startQuiz()');
  assert(a.run('questions.map(q=>q.id)').every(id=>activeIds.has(id)));
 });
-test('advanced school rounds cover distinct subjects and history while exhausting all 500 questions',()=>{
+test('middle school rounds cover distinct subjects and history while exhausting all 500 questions',()=>{
  const slug='general-knowledge';
  assert.equal(new Set(banks[slug].map(q=>q.tag)).size,28);
  const history=catalog.find(q=>q.slug===slug).historySubjects;
