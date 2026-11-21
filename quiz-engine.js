@@ -85,19 +85,20 @@ async function shareResult(){
     showNotice(copied?'Ссылка скопирована':'Не удалось скопировать ссылку');
   }
 }
-let archivedQuestions;
+const archivedQuestions=new Map();
 async function renderRoute(){
   const hash=location.hash;
   let shared=decodeHash(hash);
-  if(!shared&&quiz.archive){
+  if(!shared&&quiz.archives){
     const score=parseScore(hash);
-    if(score&&score.ids.every(id=>id<=quiz.archive.lastId)){
+    const archive=score&&quiz.archives.find(({firstId,lastId})=>score.ids.every(id=>id>=firstId&&id<=lastId));
+    if(archive){
       try{
-        if(!archivedQuestions){
-          const response=await fetch(quiz.archive.file);
+        if(!archivedQuestions.has(archive.file)){
+          const response=await fetch(archive.file);
           if(!response.ok)throw Error('Archive unavailable');
           const bank=await response.json();
-          archivedQuestions=new Map(bank.map(q=>[q.id,q]));
+          archivedQuestions.set(archive.file,new Map(bank.map(q=>[q.id,q])));
         }
       }catch(error){
         if(location.hash!==hash)return;
@@ -106,7 +107,7 @@ async function renderRoute(){
         return;
       }
       if(location.hash!==hash)return;
-      shared=decodeHash(hash,archivedQuestions);
+      shared=decodeHash(hash,archivedQuestions.get(archive.file));
     }
   }
   if(shared){questions=shared.questions;answers=shared.answers;showResult(shared.answers,true);}else renderHome();

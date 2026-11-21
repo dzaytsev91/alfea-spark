@@ -43,22 +43,25 @@ test('every bank produces random valid attempts and prioritizes all unseen quest
   const b=setup(quiz.slug,{storage:fresh.storage}),next=b.run('chooseQuestions()');assert.equal(next.filter(q=>!first.includes(q.id)).length,Math.min(20,banks[quiz.slug].length-20));
  }
 });
-test('school quiz serves new questions and preserves shared results from the original bank',async()=>{
+test('senior school rounds use new questions and both earlier versions retain their shared scores',async()=>{
  const slug='general-knowledge';
- const archive=catalog.find(q=>q.slug===slug).archive;
- const oldBank=JSON.parse(readFileSync(root+archive.file,'utf8'));
- assert(banks[slug].every(q=>q.id>archive.lastId));
- assert(oldBank.every(q=>q.id<=archive.lastId));
- const oldRound=oldBank.slice(0,20);
- const hash='#score=1.'+oldRound.map(q=>q.id.toString(36)+'-'+q.answer).join('.');
+ const archives=catalog.find(q=>q.slug===slug).archives;
+ assert.equal(archives.length,2);
+ const activeIds=new Set(banks[slug].map(q=>q.id));
  const a=setup(slug);
- a.run('location.hash='+JSON.stringify(hash));
- a.run('fetch=async path=>{if(path!==quiz.archive.file)throw Error("unexpected path");return {ok:true,json:async()=>'+JSON.stringify(oldRound)+'}}');
- await a.run('renderRoute()');
- assert(a.element.innerHTML.includes('20 из 20 · 100%'));
- assert.equal(a.run('resultHash(answers)'),hash);
+ for(const archive of archives){
+  const oldBank=JSON.parse(readFileSync(root+archive.file,'utf8'));
+  assert(oldBank.every(q=>q.id>=archive.firstId&&q.id<=archive.lastId&&!activeIds.has(q.id)));
+  const oldRound=oldBank.slice(0,20);
+  const hash='#score=1.'+oldRound.map(q=>q.id.toString(36)+'-'+q.answer).join('.');
+  a.run('location.hash='+JSON.stringify(hash));
+  a.run('fetch=async path=>{if(path!=='+JSON.stringify(archive.file)+')throw Error("unexpected path");return {ok:true,json:async()=>'+JSON.stringify(oldRound)+'}}');
+  await a.run('renderRoute()');
+  assert(a.element.innerHTML.includes('20 из 20 · 100%'));
+  assert.equal(a.run('resultHash(answers)'),hash);
+ }
  a.run('startQuiz()');
- assert(a.run('questions.every(q=>q.id>quiz.archive.lastId)'));
+ assert(a.run('questions.map(q=>q.id)').every(id=>activeIds.has(id)));
 });
 test('history is independent across quizzes and survives denied or malformed storage',()=>{
  const storage=new Map(),a=setup('minecraft',{storage});a.run('questions=chooseQuestions();questions.forEach(q=>rememberQuestion(q.id))');

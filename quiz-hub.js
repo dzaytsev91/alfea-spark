@@ -1,7 +1,7 @@
 'use strict';
 function hubEscape(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));}
 const aliases={
-  'general-knowledge':'эрудиция кругозор школа школьные знания математика русский язык литература биология география история физика химия информатика космос general knowledge',
+  'general-knowledge':'эрудиция кругозор школа школьные знания старшая школа 10 класс 11 класс математика русский язык литература биология география история физика химия информатика обществознание general knowledge',
   oxxxymiron:'оксимирон окси мирон треки рэп рэпер oxxxy',
   twilight:'twilight сумерки белла эдвард джейкоб вампиры',
   'vampire-diaries':'the vampire diaries tvd дв дневники вампира елена стефан деймон',

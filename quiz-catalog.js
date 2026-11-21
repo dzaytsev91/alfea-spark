@@ -169,10 +169,13 @@ const quizCatalog=[
     "slug": "general-knowledge",
     "title": "Общие знания",
     "category": "knowledge",
-    "scope": "10 школьных предметов · ориентир на 5–8 классы",
-    "description": "Как найти четверть часа, чем дышат рыбы и почему меняются времена года? Вспомни знакомое из школьных уроков.",
-    "difficulty": "Школьный уровень",
-    "archive": { "lastId": 500, "file": "./data/archive/general-knowledge-v1.json" },
+    "scope": "10 предметов · программа старшей школы",
+    "description": "Цена выросла на 20 %, а потом снизилась на 20 %. Вернулась ли она к исходной? В каждом раунде — задачи и вопросы из разных школьных предметов.",
+    "difficulty": "10–11 классы",
+    "archives": [
+      { "firstId": 1, "lastId": 500, "file": "./data/archive/general-knowledge-v1.json" },
+      { "firstId": 501, "lastId": 1000, "file": "./data/archive/general-knowledge-v2.json" }
+    ],
     "icon": "🌍",
     "color": "#397676",
     "art": "globe",
